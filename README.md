@@ -69,3 +69,10 @@ To import the above file add this annotation to the Spring based test:
 ```kotlin
 @Import(SequenceDiagramConfig::class)
 ```
+
+4. It's also helpful to generate the diagrams in a local folder rather than the default one. This can be done by setting the `yatspec.output.dir` property, for example like this:
+```kotlin
+tasks.withType<Test> {
+    systemProperty("yatspec.output.dir", "$buildDir/reports/yatspec")
+}
+```
