@@ -7,7 +7,7 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule
 import com.fasterxml.jackson.module.kotlin.KotlinModule
 
 class ObjectMapperCreator {
-    fun create():ObjectMapper {
+    fun create(): ObjectMapper {
         val mapper = ObjectMapper()
         mapper.registerModule(KotlinModule())
         mapper.registerModule(JavaTimeModule())

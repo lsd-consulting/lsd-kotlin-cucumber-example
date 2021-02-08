@@ -7,11 +7,11 @@ import org.springframework.boot.test.context.TestConfiguration
 import javax.annotation.PostConstruct
 
 @TestConfiguration
-// TODO Doesn't seem to work
 class PrettyPrintObjectMapperConfig(@Autowired val objectMapper: ObjectMapper) {
 
     @PostConstruct
     fun objectMapper() {
+        // Temporary - until it is automated in Yatspec
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT)
     }
 }

@@ -61,7 +61,7 @@ dependencies {
     // Component test dependencies
     componentTestImplementation("org.springframework.boot:spring-boot-starter-test")
 
-    componentTestImplementation("com.github.nickmcdowall:yatspec:223")
+    componentTestImplementation("com.github.nickmcdowall:yatspec:2021.0.1")
     componentTestImplementation("com.github.nickmcdowall:yatspec-lsd-interceptors:0.3.21")
 
     // JUnit 5

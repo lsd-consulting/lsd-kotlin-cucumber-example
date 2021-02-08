@@ -5,6 +5,7 @@ import com.integreety.activityengine.ActivityEngineApplication
 import com.integreety.activityengine.api.request.ActivityRequest
 import com.integreety.activityengine.api.response.ActivityResponse
 import com.integreety.activityengine.client.ActivityEngineClient
+import com.integreety.activityengine.config.PrettyPrintObjectMapperConfig
 import com.integreety.activityengine.config.SequenceDiagramConfig
 import io.cucumber.java8.En
 import io.cucumber.spring.CucumberContextConfiguration
@@ -22,10 +23,10 @@ import org.springframework.test.context.TestPropertySource
 @SpringBootTest(webEnvironment = DEFINED_PORT, classes = [ActivityEngineApplication::class])
 @EnableFeignClients(clients = [ActivityEngineClient::class])
 @TestPropertySource("classpath:application-test.properties")
-@Import(SequenceDiagramConfig::class)
+@Import(SequenceDiagramConfig::class, PrettyPrintObjectMapperConfig::class)
 class FindActivityApiSteps(
     val activityEngineClient: ActivityEngineClient,
-    val testRestTemplate: TestRestTemplate,
+    private val testRestTemplate: TestRestTemplate,
     val testState: TestState
 ) : En {
 
@@ -34,7 +35,6 @@ class FindActivityApiSteps(
 
     init {
 
-        // TODO Is there a better way to do it? (This is to exclude the test calls from LSD)
         testRestTemplate.restTemplate.interceptors.clear()
 
         Given("an existing activity with lessonId {word}") { lessonId: String ->
@@ -49,7 +49,7 @@ class FindActivityApiSteps(
         Given("a non existent lessonId") {
         }
 
-        When("the activity is requested by the returned id") {
+        When("the activity is requested by its id") {
             activityResponse = activityResponse?.body?.let { activityEngineClient.find(it.id) }
         }
 
@@ -57,7 +57,7 @@ class FindActivityApiSteps(
             activityResponses = activityEngineClient.findByLessonId(lessonId)
         }
 
-        Then("the activity is returned with lessonId {word}") { lessonId: String ->
+        Then("the activity with lessonId {word} is returned") { lessonId: String ->
             assertThat(activityResponse?.body?.lessonId, equalTo(lessonId))
         }
 
