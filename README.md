@@ -4,7 +4,7 @@ This is a demo project to showcase the LSD library with Cucumber in Kotlin.
 
 Using LSD/Yatspec and Cucumber it is easy to produce a diagram like this from tests:
 
-![Diagram example](https://github.com/integreety/kotlin-cucumber-yatspec-lsd/blob/main/docs/diagram.png?raw=true)
+![Diagram example](docs/diagram.png?raw=true)
 
 Here is the Gherkin script used for the above diagram:
 ```gherkin
