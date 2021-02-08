@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "activityEngine.url",
+      "type": "java.lang.String"
+    }
+  ]
+}
