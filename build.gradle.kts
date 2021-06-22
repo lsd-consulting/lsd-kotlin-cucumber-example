@@ -8,7 +8,7 @@ plugins {
     id("io.spring.dependency-management") version "1.0.9.RELEASE"
 }
 
-group = "com.integreety"
+group = "io.github.lsd-consulting"
 rootProject.version = System.getenv("CI_PIPELINE_ID")
 println("Build Version = ${project.version}")
 
@@ -19,7 +19,7 @@ configurations {
 }
 
 allprojects {
-    group = "com.integreety"
+    group = "io.github.lsd-consulting"
     version = rootProject.version
 
     apply(plugin = "io.spring.dependency-management")
