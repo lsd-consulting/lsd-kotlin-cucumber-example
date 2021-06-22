@@ -16,6 +16,7 @@ fun toActivityResponse(activityDto: ActivityDto): ActivityResponse {
         id = activityDto.id!!,
         lessonId = activityDto.lessonId,
         inputQuestions = activityDto.inputQuestions,
+        maxScore = activityDto.maxScore,
         createdAt = activityDto.createdAt!!
     )
 }

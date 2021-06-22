@@ -1,8 +1,8 @@
-# kotlin-cucumber-yatspec-lsd
+# lsd-kotlin-cucumber-example
 
 This is a demo project to showcase the LSD library with Cucumber in Kotlin.
 
-Using LSD/Yatspec and Cucumber it is easy to produce a diagram like this from tests:
+When applying LSD and Cucumber it is easy to produce a diagram like this from tests:
 
 ![Diagram example](docs/diagram.png?raw=true)
 
@@ -21,16 +21,16 @@ Feature: Find activity
 
 1. Add the following test dependencies:
 ```groovy
-componentTestImplementation("com.github.nickmcdowall:yatspec:2021.0.1")
-componentTestImplementation("com.github.nickmcdowall:yatspec-lsd-interceptors:0.3.21")
+componentTestImplementation("com.lsd:lsd-core:+")
+componentTestImplementation("com.lsd:lsd-interceptors:+")
 ```
 
 2. Include the LSD Cucumber plugin, for example by setting the `cucumber.plugin` property in the `junit-platform.properties` file:
 ```bash
-cucumber.plugin=com.googlecode.yatspec.cucumber.YatspecForCucumber:
+cucumber.plugin=lsd.cucumber.LsdCucumberPlugin
 ```
 
-**NOTE** Currently, Yatspec doesn't support parallel test execution, so do not change the value of the `cucumber.execution.parallel.enabled` property to true. Keep the default value which is `false`.
+**NOTE** Currently, LSD doesn't support parallel test execution yet, so do not change the value of the `cucumber.execution.parallel.enabled` property to true. Keep the default value which is `false`.
 
 3. Import the following Spring config file in the tests:
 ```kotlin
@@ -70,9 +70,9 @@ To import the above file add this annotation to the Spring based test:
 @Import(SequenceDiagramConfig::class)
 ```
 
-4. It's also helpful to generate the diagrams in a local folder rather than the default one. This can be done by setting the `yatspec.output.dir` property, for example like this:
+4. It's also helpful to generate the diagrams in a local folder rather than the default one. This can be done by setting the `lsd.core.report.outputDir` property, for example like this:
 ```kotlin
 tasks.withType<Test> {
-    systemProperty("yatspec.output.dir", "$buildDir/reports/yatspec")
+    systemProperty("lsd.core.report.outputDir", "$buildDir/reports/lsd")
 }
 ```

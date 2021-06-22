@@ -24,6 +24,8 @@ val componentTest = task<Test>("componentTest") {
     testClassesDirs = sourceSets["componentTest"].output.classesDirs
     classpath = sourceSets["componentTest"].runtimeClasspath
     testLogging.showStandardStreams = true
+    systemProperty("lsd.core.report.outputDir", "$buildDir/reports/lsd")
+    useJUnitPlatform()
     mustRunAfter(tasks["test"])
 }
 
@@ -37,12 +39,6 @@ val componentTestRuntimeOnly: Configuration by configurations.getting {
 configurations["componentTestImplementation"].extendsFrom(configurations.runtimeOnly.get())
 
 tasks.check { dependsOn(componentTest) }
-
-tasks.withType<Test> {
-    systemProperty("yatspec.output.dir", "$buildDir/reports/yatspec")
-    useJUnitPlatform()
-}
-
 
 //////////////////////////
 // dependencies
@@ -61,31 +57,29 @@ dependencies {
     // Component test dependencies
     componentTestImplementation("org.springframework.boot:spring-boot-starter-test")
 
-    componentTestImplementation("com.github.nickmcdowall:yatspec:2021.0.1")
-    componentTestImplementation("com.github.nickmcdowall:yatspec-lsd-interceptors:0.3.21")
+    componentTestImplementation("io.github.lsd-consulting:lsd-cucumber:0.1.0") {
+        because("we want to include the Cucumber scenarios in the LSDs")
+    }
 
     // JUnit 5
     componentTestImplementation("org.junit.jupiter:junit-jupiter-api:5.7.0") {
         because("we want to use JUnit 5")
-    }
-    componentTestImplementation("org.junit.jupiter:junit-jupiter-engine:5.7.0") {
-        because("Cucumber relies on jupiter-engine to resolve tests")
     }
     componentTestImplementation("org.junit.jupiter:junit-jupiter-params:5.7.0") {
         because("we want to run parameterised tests")
     }
 
     // Cucumber
-    componentTestImplementation("io.cucumber:cucumber-java8:6.9.1") {
+    componentTestImplementation("io.cucumber:cucumber-java8:6.10.4") {
         because("we want to use Cucumber JVM")
     }
-    componentTestImplementation("io.cucumber:cucumber-junit-platform-engine:6.9.1") {
+    componentTestImplementation("io.cucumber:cucumber-junit-platform-engine:6.10.4") {
         because("we want to use Cucumber with JUnit 5")
     }
-    componentTestImplementation("io.cucumber:cucumber-spring:6.9.1") {
+    componentTestImplementation("io.cucumber:cucumber-spring:6.10.4") {
         because("we want to use dependency injection in our Cucumber tests")
     }
-    componentTestImplementation("de.monochromata.cucumber:reporting-plugin:4.0.89") {
+    componentTestImplementation("de.monochromata.cucumber:reporting-plugin:4.0.103") {
         because("we want to see useful Cucumber reports")
     }
 }

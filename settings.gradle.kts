@@ -1,4 +1,4 @@
-rootProject.name = "kotlin-cucumber-yatspec-lsd"
+rootProject.name = "lsd-kotlin-cucumber-example"
 
 include("api")
 include("service")

@@ -11,7 +11,8 @@ class PrettyPrintObjectMapperConfig(@Autowired val objectMapper: ObjectMapper) {
 
     @PostConstruct
     fun objectMapper() {
-        // Temporary - until it is automated in Yatspec
+        // Temporary - until it is automated in LSD
+        // TODO Remove after adding LSD Interceptors
         objectMapper.enable(SerializationFeature.INDENT_OUTPUT)
     }
 }

@@ -8,5 +8,6 @@ data class ActivityResponse(
         val id: String,
         val lessonId: String,
         val inputQuestions: List<InputQuestion> = ArrayList(),
+        val maxScore: Int?,
         val createdAt: ZonedDateTime
 )

@@ -1,10 +1,10 @@
 package com.integreety.activityengine.step
 
-import com.googlecode.yatspec.state.givenwhenthen.TestState
 import com.integreety.activityengine.api.request.ActivityRequest
 import com.integreety.activityengine.api.response.ActivityResponse
 import com.integreety.activityengine.api.shared.question.InputQuestion
 import com.integreety.activityengine.client.ActivityEngineClient
+import com.lsd.LsdContext
 import io.cucumber.java8.En
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.*
@@ -13,9 +13,9 @@ import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import java.util.*
 
-class SaveActivityApiSteps(val activityEngineClient: ActivityEngineClient,
-                           val testRestTemplate: TestRestTemplate,
-                           val testState: TestState
+class SaveActivityApiSteps(
+    val activityEngineClient: ActivityEngineClient,
+    val testRestTemplate: TestRestTemplate,
 ) : En {
 
     lateinit var activityRequest: ActivityRequest
@@ -29,7 +29,7 @@ class SaveActivityApiSteps(val activityEngineClient: ActivityEngineClient,
         testRestTemplate.restTemplate.interceptors.clear()
 
         Given("a request to save an empty activity") {
-            testState.interestingGivens().add("lessonId", lessonId)
+            LsdContext.getInstance().addFact("lessonId", lessonId)
 
             activityRequest = ActivityRequest(lessonId = lessonId)
         }
@@ -37,7 +37,7 @@ class SaveActivityApiSteps(val activityEngineClient: ActivityEngineClient,
         When("the request is received") {
             activityResponse = activityEngineClient.save(activityRequest)
 
-            testState.interestingGivens().add("activity id", activityResponse.body?.id)
+            LsdContext.getInstance().addFact("activity id", activityResponse.body?.id)
         }
 
         Then("the request is accepted") {
@@ -51,7 +51,7 @@ class SaveActivityApiSteps(val activityEngineClient: ActivityEngineClient,
         }
 
         Given("a request to save an activity with a question") {
-            testState.interestingGivens().add("lessonId", lessonId)
+            LsdContext.getInstance().addFact("lessonId", lessonId)
 
             val inputQuestion = InputQuestion(
                 id = UUID.randomUUID().toString(),

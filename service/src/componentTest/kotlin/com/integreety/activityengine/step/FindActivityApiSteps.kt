@@ -1,12 +1,11 @@
 package com.integreety.activityengine.step
 
-import com.googlecode.yatspec.state.givenwhenthen.TestState
 import com.integreety.activityengine.ActivityEngineApplication
 import com.integreety.activityengine.api.request.ActivityRequest
 import com.integreety.activityengine.api.response.ActivityResponse
 import com.integreety.activityengine.client.ActivityEngineClient
 import com.integreety.activityengine.config.PrettyPrintObjectMapperConfig
-import com.integreety.activityengine.config.SequenceDiagramConfig
+import com.lsd.LsdContext
 import io.cucumber.java8.En
 import io.cucumber.spring.CucumberContextConfiguration
 import org.hamcrest.MatcherAssert.assertThat
@@ -23,11 +22,10 @@ import org.springframework.test.context.TestPropertySource
 @SpringBootTest(webEnvironment = DEFINED_PORT, classes = [ActivityEngineApplication::class])
 @EnableFeignClients(clients = [ActivityEngineClient::class])
 @TestPropertySource("classpath:application-test.properties")
-@Import(SequenceDiagramConfig::class, PrettyPrintObjectMapperConfig::class)
+@Import(PrettyPrintObjectMapperConfig::class)
 class FindActivityApiSteps(
     val activityEngineClient: ActivityEngineClient,
     private val testRestTemplate: TestRestTemplate,
-    val testState: TestState
 ) : En {
 
     private var activityResponse: ResponseEntity<ActivityResponse>? = null
@@ -43,7 +41,7 @@ class FindActivityApiSteps(
                 ActivityRequest(lessonId = lessonId),
                 ActivityResponse::class.java
             )
-            testState.interestingGivens().add("lessonId", lessonId)
+            LsdContext.getInstance().addFact("lessonId", lessonId)
         }
 
         Given("a non existent lessonId") {
