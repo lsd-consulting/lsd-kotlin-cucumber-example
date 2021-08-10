@@ -5,7 +5,6 @@ import com.lsdconsulting.activityengine.ActivityEngineApplication
 import com.lsdconsulting.activityengine.api.request.ActivityRequest
 import com.lsdconsulting.activityengine.api.response.ActivityResponse
 import com.lsdconsulting.activityengine.client.ActivityEngineClient
-import com.lsdconsulting.activityengine.config.PrettyPrintObjectMapperConfig
 import io.cucumber.java8.En
 import io.cucumber.spring.CucumberContextConfiguration
 import org.hamcrest.MatcherAssert.assertThat
@@ -14,7 +13,6 @@ import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment.DEFINED_PORT
 import org.springframework.boot.test.web.client.TestRestTemplate
 import org.springframework.cloud.openfeign.EnableFeignClients
-import org.springframework.context.annotation.Import
 import org.springframework.http.ResponseEntity
 import org.springframework.test.context.TestPropertySource
 
@@ -22,7 +20,6 @@ import org.springframework.test.context.TestPropertySource
 @SpringBootTest(webEnvironment = DEFINED_PORT, classes = [ActivityEngineApplication::class])
 @EnableFeignClients(clients = [ActivityEngineClient::class])
 @TestPropertySource("classpath:application-test.properties")
-@Import(PrettyPrintObjectMapperConfig::class)
 class FindActivityApiSteps(
     val activityEngineClient: ActivityEngineClient,
     private val testRestTemplate: TestRestTemplate,

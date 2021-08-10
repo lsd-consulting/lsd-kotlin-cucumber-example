@@ -57,10 +57,11 @@ dependencies {
     // Component test dependencies
     componentTestImplementation("org.springframework.boot:spring-boot-starter-test")
 
-    // TODO Remove after updating lsd-cucumber
-    componentTestImplementation("com.github.nickmcdowall:lsd-core:0.1.15")
+    componentTestImplementation("io.github.lsd-consulting:lsd-cucumber:0.1.1") {
+        because("we want to include the Cucumber scenarios in the LSDs")
+    }
 
-    componentTestImplementation("io.github.lsd-consulting:lsd-cucumber:0.1.0") {
+    componentTestImplementation("io.github.lsd-consulting:lsd-interceptors:1.0.15") {
         because("we want to include the Cucumber scenarios in the LSDs")
     }
 
