@@ -42,6 +42,7 @@ class FindActivityApiSteps(
         }
 
         Given("a non existent lessonId") {
+            LsdContext.getInstance().capture("message from A to B", "hello")
         }
 
         When("the activity is requested by its id") {
