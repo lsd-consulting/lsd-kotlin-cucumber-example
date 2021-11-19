@@ -57,7 +57,7 @@ dependencies {
     // Component test dependencies
     componentTestImplementation("org.springframework.boot:spring-boot-starter-test")
 
-    componentTestImplementation("io.github.lsd-consulting:lsd-cucumber:0.1.4") {
+    componentTestImplementation("io.github.lsd-consulting:lsd-cucumber:0.1.6") {
         because("we want to include the Cucumber scenarios in the LSDs")
     }
 

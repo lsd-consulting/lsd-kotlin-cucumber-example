@@ -1,4 +1,4 @@
-Feature: Calculate activitie's max score
+Feature: Calculate activity's max score
 
   Scenario Outline: calculate the max possible score for an activity
     Given an existing activity with <number_of_questions> questions and with <points> each
