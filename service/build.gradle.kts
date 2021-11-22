@@ -66,10 +66,10 @@ dependencies {
     }
 
     // JUnit 5
-    componentTestImplementation("org.junit.jupiter:junit-jupiter-api:5.7.0") {
+    componentTestImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1") {
         because("we want to use JUnit 5")
     }
-    componentTestImplementation("org.junit.jupiter:junit-jupiter-params:5.7.0") {
+    componentTestImplementation("org.junit.jupiter:junit-jupiter-params:5.8.1") {
         because("we want to run parameterised tests")
     }
 
