@@ -31,7 +31,7 @@ allprojects {
         jcenter()
     }
 
-    extra["springCloudVersion"] = "Hoxton.SR9"
+    extra["springCloudVersion"] = "2020.0.4"
 
     tasks.withType<KotlinCompile> {
         kotlinOptions {
