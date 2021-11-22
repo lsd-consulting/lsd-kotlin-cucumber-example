@@ -74,13 +74,13 @@ dependencies {
     }
 
     // Cucumber
-    componentTestImplementation("io.cucumber:cucumber-java8:6.10.4") {
+    componentTestImplementation("io.cucumber:cucumber-java8:6.11.0") {
         because("we want to use Cucumber JVM")
     }
-    componentTestImplementation("io.cucumber:cucumber-junit-platform-engine:6.10.4") {
+    componentTestImplementation("io.cucumber:cucumber-junit-platform-engine:6.11.0") {
         because("we want to use Cucumber with JUnit 5")
     }
-    componentTestImplementation("io.cucumber:cucumber-spring:6.10.4") {
+    componentTestImplementation("io.cucumber:cucumber-spring:6.11.0") {
         because("we want to use dependency injection in our Cucumber tests")
     }
     componentTestImplementation("de.monochromata.cucumber:reporting-plugin:4.0.103") {
