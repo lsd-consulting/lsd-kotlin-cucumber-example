@@ -28,7 +28,6 @@ allprojects {
     repositories {
         mavenLocal()
         mavenCentral()
-        jcenter()
     }
 
     extra["springCloudVersion"] = "2020.0.4"
