@@ -2,8 +2,8 @@ plugins {
     kotlin("jvm")
     kotlin("plugin.spring")
     id("org.springframework.boot") version "2.5.6"
+    id("jacoco")
 }
-
 
 //////////////////////////
 // componentTest source set
@@ -27,6 +27,7 @@ val componentTest = task<Test>("componentTest") {
     systemProperty("lsd.core.report.outputDir", "$buildDir/reports/lsd")
     useJUnitPlatform()
     mustRunAfter(tasks["test"])
+    finalizedBy(tasks.jacocoTestReport)
 }
 
 val componentTestImplementation: Configuration by configurations.getting {
@@ -52,6 +53,11 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+
+    testImplementation("org.hamcrest:hamcrest-core:2.2")
+    testImplementation("org.junit.platform:junit-platform-commons:1.8.1")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
 
     //////////////////////////////////
     // Component test dependencies
@@ -88,3 +94,22 @@ dependencies {
     }
 }
 
+
+tasks.test {
+    useJUnitPlatform()
+}
+
+jacoco {
+    toolVersion = "0.8.7"
+}
+
+tasks.jacocoTestReport {
+    executionData(
+        file("${project.buildDir}/jacoco/componentTest.exec")
+    )
+    reports {
+        xml.isEnabled = true
+        html.isEnabled = true
+        html.setDestination(project.provider { File("${project.buildDir}/reports/coverage") })
+    }
+}
