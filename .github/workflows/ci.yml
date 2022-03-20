@@ -36,4 +36,4 @@ jobs:
         uses: EnricoMi/publish-unit-test-result-action/composite@v1
         if: always()
         with:
-          files: "service/test-results/**/*.xml"
+          files: "service/build/test-results/**/*.xml"
