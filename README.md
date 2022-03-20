@@ -2,6 +2,8 @@
 
 This is a demo project to showcase the LSD library with Cucumber in Kotlin.
 
+To view an example report please go here: https://lsd-consulting.github.io/lsd-kotlin-cucumber-example/lsd-index.html
+
 When applying LSD and Cucumber it is easy to produce a diagram like this from tests:
 
 ![Diagram example](docs/diagram.png?raw=true)
@@ -63,7 +65,7 @@ class SequenceDiagramConfig {
 }
 ```
 
-The above is a standard Yatspec setup. Further details on it can be found [here](https://github.com/nickmcdowall/yatspec)
+The above is a standard LSD setup. Further details on it can be found [here](https://github.com/lsd-consulting/lsd-core)
 
 To import the above file add this annotation to the Spring based test:
 ```kotlin
