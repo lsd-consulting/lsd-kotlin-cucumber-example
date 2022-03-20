@@ -22,7 +22,12 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Build with Gradle
-        run: ./gradlew test
+        run: ./gradlew build
+      - name: Publish LSD report
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: gh-pages
+          folder: service/build/reports/lsd
       - uses: actions/upload-artifact@v2
         if: always()
         with:
@@ -37,8 +42,3 @@ jobs:
         if: always()
         with:
           files: "service/build/test-results/**/*.xml"
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
-        with:
-          branch: gh-pages
-          folder: service/build/reports/lsd
