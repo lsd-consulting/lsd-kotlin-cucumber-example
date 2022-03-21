@@ -13,7 +13,12 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Build with Gradle
-        run: ./gradlew test
+        run: ./gradlew build
+      - name: Publish LSD report
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: gh-pages
+          folder: service/build/reports/lsd
       - name: Publish Unit Test Results
         uses: EnricoMi/publish-unit-test-result-action/composite@v1
         if: always()
