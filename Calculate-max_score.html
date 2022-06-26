@@ -13,20 +13,192 @@
         <h3>Contents</h3>
         <ul class="contents">
             
-            <li class="success"><a href="#ccd708615e9c428ab4bddff4eed7fac0">calculate the max possible score for an activity #1</a></li>
+            <li class="success"><a href="#849cd509ca984b2a8ac4552ef27801ce">calculate the max possible score for an activity #1</a></li>
             
-            <li class="success"><a href="#b8a87934edb74a5bb092f7444f5b79ff">calculate the max possible score for an activity #2</a></li>
+            <li class="success"><a href="#c7cd2ebf889e449f884873dade7d96f2">calculate the max possible score for an activity #2</a></li>
             
         </ul>
     </div>
     
 
-    <article id="ccd708615e9c428ab4bddff4eed7fac0">
+    <article id="849cd509ca984b2a8ac4552ef27801ce">
         <span onclick="location.href='#top';" title="top of page" class="back_to_top"></span>
         <h2 class="success">calculate the max possible score for an activity #1</h2>
         <section class="description success">
             <h3 class="success">Description</h3>
             Given  an existing activity with 1 questions and with 5 each</br>When  the activity is requested</br>Then  the activity's max score is 5
+        </section>
+        
+        
+        <section class="sequence diagram svg success">
+            <h3 class="success">Sequence Diagram</h3>
+            <figure><?xml version="1.0" encoding="UTF-8"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="152px" preserveAspectRatio="none" style="width:485px;height:152px;background:#00000000;" version="1.1" viewBox="0 0 485 152" width="485px" zoomAndPan="magnify">
+  <defs/>
+  <g>
+    <rect fill="#87CEEB" height="29.7993" style="stroke:#000000;stroke-width:1.0;" width="10" x="435" y="68.814"/>
+    <line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="41" x2="41" y1="37.0146" y2="116.6133"/>
+    <line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="440" x2="440" y1="37.0146" y2="116.6133"/>
+    <rect fill="#FFFFFF" height="31.0146" style="stroke:#000000;stroke-width:1.0;" width="42" x="20" y="5"/>
+    <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="28" x="27" y="26.0752">App</text>
+    <rect fill="#FFFFFF" height="31.0146" style="stroke:#000000;stroke-width:1.0;" width="42" x="20" y="115.6133"/>
+    <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="28" x="27" y="136.6885">App</text>
+    <rect fill="#FFFFFF" height="31.0146" style="stroke:#000000;stroke-width:1.0;" width="78" x="401" y="5"/>
+    <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="64" x="408" y="26.0752">Activities</text>
+    <rect fill="#FFFFFF" height="31.0146" style="stroke:#000000;stroke-width:1.0;" width="78" x="401" y="115.6133"/>
+    <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="64" x="408" y="136.6885">Activities</text>
+    <rect fill="#87CEEB" height="29.7993" style="stroke:#000000;stroke-width:1.0;" width="10" x="435" y="68.814"/>
+    <polygon fill="#000000" points="423,64.814,433,68.814,423,72.814,427,68.814" style="stroke:#000000;stroke-width:1.0;"/>
+    <line style="stroke:#000000;stroke-width:1.0;" x1="41" x2="429" y1="68.814" y2="68.814"/>
+    <a href="#58ecfae805c94b8480f97227ebd98566" target="_top" title="GET /activities/973c9501-d05e-4948-a142-aebf50467fc4" xlink:actuate="onRequest" xlink:href="#58ecfae805c94b8480f97227ebd98566" xlink:show="new" xlink:title="GET /activities/973c9501-d05e-4948-a142-aebf50467fc4" xlink:type="simple">
+      <text fill="" font-family="Verdana" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="375" x="48" y="64.0845">GET /activities/973c9501-d05e-4948-a142-aebf50467fc4</text>
+    </a>
+    <line style="stroke:#000000;stroke-width:1.0;" x1="41" x2="51" y1="98.6133" y2="94.6133"/>
+    <line style="stroke:#000000;stroke-width:1.0;" x1="41" x2="51" y1="98.6133" y2="102.6133"/>
+    <line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="41" x2="439" y1="98.6133" y2="98.6133"/>
+    <a href="#6b53b508b376485591caff45ccb7da50" target="_top" title="200 OK response" xlink:actuate="onRequest" xlink:href="#6b53b508b376485591caff45ccb7da50" xlink:show="new" xlink:title="200 OK response" xlink:type="simple">
+      <text fill="" font-family="Verdana" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="113" x="58" y="93.8838">200 OK response</text>
+    </a>
+  </g>
+</svg>
+</figure>
+            <div onclick="location.href='#!';" id="87d5de29879b42a5b5fe185cdebf59d6" class="overlay">
+                <div class="popup" onclick="event.stopPropagation();">
+                    <h2>PlantUml markup</h2>
+                    <span class="copy" title="copy" onclick="copyToClipboard('sequence_uml_code87d5de29879b42a5b5fe185cdebf59d6')"></span>
+                    <a class="close" href="#!">&times;</a>
+                    <div class="content">
+                        <pre><code id="sequence_uml_code87d5de29879b42a5b5fe185cdebf59d6">@startuml
+
+!theme plain
+
+skinparam backgroundColor transparent
+
+hide unlinked
+
+
+!include &lt;tupadr3/font-awesome-5/clock&gt;
+
+!include &lt;tupadr3/font-awesome-5/database&gt;
+
+
+
+
+
+App -&gt; Activities: &lt;text fill&#x3D;&quot;&quot;&gt;[[#58ecfae805c94b8480f97227ebd98566 {GET /activities/973c9501-d05e-4948-a142-aebf50467fc4} GET /activities/973c9501-d05e-4948-a142-aebf50467fc4]]&lt;/text&gt;
+
+activate Activities#skyblue
+
+Activities --&gt;&gt; App: &lt;text fill&#x3D;&quot;&quot;&gt;[[#6b53b508b376485591caff45ccb7da50 {200 OK response} 200 OK response]]&lt;/text&gt;
+
+deactivate Activities
+
+
+@enduml</code></pre>
+                    </div>
+                </div>
+            </div>
+            <sub><a href="#87d5de29879b42a5b5fe185cdebf59d6">[source]</a></sub>
+            <sub><a href="#2526b4a88c3142c8b96ac775445f5257">[component diagram]</a></sub>
+        </section>
+        <!-- Popup for component diagram -->
+        <div onclick="location.href='#!';" id="2526b4a88c3142c8b96ac775445f5257" class="overlay">
+            <div class="popup" onclick="event.stopPropagation();">
+                <h2>Component Diagram</h2>
+                <a class="close" href="#!">&times;</a>
+                <div class="content">
+                    <pre><?xml version="1.0" encoding="UTF-8"?>
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="141px" preserveAspectRatio="none" style="width:86px;height:141px;background:#00000000;" version="1.1" viewBox="0 0 86 141" width="86px" zoomAndPan="magnify">
+  <defs/>
+  <g>
+    <rect fill="#FFFFFF" height="47.0146" style="stroke:#000000;stroke-width:1.0;" width="68" x="12" y="10.0146"/>
+    <rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="60" y="15.0146"/>
+    <rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="58" y="17.0146"/>
+    <rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="58" y="21.0146"/>
+    <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="28" x="27" y="44.0898">App</text>
+    <ellipse cx="46" cy="102.0146" fill="#FFFFFF" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/>
+    <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="64" x="14" y="133.0898">Activities</text>
+    <path d="M46,57.2715 C46,69.148 46,83.1547 46,92.7178 " fill="none" style="stroke:#000000;stroke-width:1.0;"/>
+    <polygon fill="#000000" points="46,92.7178,50,83.7178,46,87.7178,42,83.7178,46,92.7178" style="stroke:#000000;stroke-width:1.0;"/>
+  </g>
+</svg>
+</pre>
+                </div>
+                <sub><a href="#uml2526b4a88c3142c8b96ac775445f5257">[source]</a></sub>
+            </div>
+        </div>
+        <!-- Popup for component diagram UML via component diagram popup -->
+        <div onclick="location.href='#!';" id="uml2526b4a88c3142c8b96ac775445f5257" class="overlay">
+            <div class="popup" onclick="event.stopPropagation();">
+                <h2>PlantUml markup</h2>
+                <span class="copy" title="copy" onclick="copyToClipboard('component_uml_code2526b4a88c3142c8b96ac775445f5257')"></span>
+                <a class="close" href="#2526b4a88c3142c8b96ac775445f5257">&times;</a><!--show previous popup on close-->
+                <div class="content">
+                    <pre><code id="component_uml_code2526b4a88c3142c8b96ac775445f5257">@startuml
+!pragma layout smetana
+!theme plain
+skinparam backgroundColor transparent
+
+
+
+[App] --&gt; Activities
+
+
+remove @unlinked
+@enduml</code></pre>
+                </div>
+            </div>
+        </div>
+        <!-- Section containing data for sequence diagram popups -->
+        
+        <div onclick="location.href='#!';" id="58ecfae805c94b8480f97227ebd98566" class="overlay">
+            <div class="popup" onclick="event.stopPropagation();">
+                <h2>GET /activities/973c9501-d05e-4948-a142-aebf50467fc4</h2>
+                <a class="close" href="#!">&times;</a>
+                <div class="content">
+                    <pre><p><p><h4>Full Path</h4><span>/activities/973c9501-d05e-4948-a142-aebf50467fc4</span></p><p><h4>Request Headers</h4><code></code></p><p></p></p></pre>
+                </div>
+            </div>
+        </div>
+        
+        <div onclick="location.href='#!';" id="6b53b508b376485591caff45ccb7da50" class="overlay">
+            <div class="popup" onclick="event.stopPropagation();">
+                <h2>200 OK response</h2>
+                <a class="close" href="#!">&times;</a>
+                <div class="content">
+                    <pre><p><p><h4>Full Path</h4><span>/activities/973c9501-d05e-4948-a142-aebf50467fc4</span></p><p><h4>Response Headers</h4><code>date: Sun, 26 Jun 2022 03:39:22 GMT
+keep-alive: timeout=60
+transfer-encoding: chunked
+connection: keep-alive
+content-type: application/json</code></p><p><h4>Body</h4><code>{
+  &quot;id&quot;: &quot;973c9501-d05e-4948-a142-aebf50467fc4&quot;,
+  &quot;lessonId&quot;: &quot;7f30bad6-f9fd-458f-9f7c-beacad2d7bcb&quot;,
+  &quot;inputQuestions&quot;: [ {
+    &quot;id&quot;: &quot;1&quot;,
+    &quot;displayOrder&quot;: 1,
+    &quot;question&quot;: &quot;question&quot;,
+    &quot;standardAnswer&quot;: &quot;answer&quot;,
+    &quot;maxScore&quot;: 5
+  } ],
+  &quot;maxScore&quot;: 5,
+  &quot;createdAt&quot;: &quot;2022-06-26T03:39:22.29148Z&quot;
+}</code></p></p></pre>
+                </div>
+            </div>
+        </div>
+        
+        
+    </article>
+    
+
+    <article id="c7cd2ebf889e449f884873dade7d96f2">
+        <span onclick="location.href='#top';" title="top of page" class="back_to_top"></span>
+        <h2 class="success">calculate the max possible score for an activity #2</h2>
+        <section class="description success">
+            <h3 class="success">Description</h3>
+            Given  an existing activity with 2 questions and with 2 each</br>When  the activity is requested</br>Then  the activity's max score is 4
         </section>
         
         
@@ -51,25 +223,25 @@
     <rect fill="#87CEEB" height="29.7993" style="stroke:#000000;stroke-width:1.0;" width="10" x="434" y="68.814"/>
     <polygon fill="#000000" points="422,64.814,432,68.814,422,72.814,426,68.814" style="stroke:#000000;stroke-width:1.0;"/>
     <line style="stroke:#000000;stroke-width:1.0;" x1="41" x2="428" y1="68.814" y2="68.814"/>
-    <a href="#1cd4f96c2d764b618764220288025768" target="_top" title="GET /activities/ae56cdfe-9941-49df-9bdb-499ac603ca7e" xlink:actuate="onRequest" xlink:href="#1cd4f96c2d764b618764220288025768" xlink:show="new" xlink:title="GET /activities/ae56cdfe-9941-49df-9bdb-499ac603ca7e" xlink:type="simple">
-      <text fill="" font-family="Verdana" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="374" x="48" y="64.0845">GET /activities/ae56cdfe-9941-49df-9bdb-499ac603ca7e</text>
+    <a href="#751dc0583b884e7995b679f6e8875df7" target="_top" title="GET /activities/b9b84b18-e330-4146-90f9-04b5000fef64" xlink:actuate="onRequest" xlink:href="#751dc0583b884e7995b679f6e8875df7" xlink:show="new" xlink:title="GET /activities/b9b84b18-e330-4146-90f9-04b5000fef64" xlink:type="simple">
+      <text fill="" font-family="Verdana" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="374" x="48" y="64.0845">GET /activities/b9b84b18-e330-4146-90f9-04b5000fef64</text>
     </a>
     <line style="stroke:#000000;stroke-width:1.0;" x1="41" x2="51" y1="98.6133" y2="94.6133"/>
     <line style="stroke:#000000;stroke-width:1.0;" x1="41" x2="51" y1="98.6133" y2="102.6133"/>
     <line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="41" x2="438" y1="98.6133" y2="98.6133"/>
-    <a href="#89a90c0ce12a492e9efc68e39bc525d8" target="_top" title="200 OK response" xlink:actuate="onRequest" xlink:href="#89a90c0ce12a492e9efc68e39bc525d8" xlink:show="new" xlink:title="200 OK response" xlink:type="simple">
+    <a href="#4b3cae7de0304d57946e20016023b8c4" target="_top" title="200 OK response" xlink:actuate="onRequest" xlink:href="#4b3cae7de0304d57946e20016023b8c4" xlink:show="new" xlink:title="200 OK response" xlink:type="simple">
       <text fill="" font-family="Verdana" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="113" x="58" y="93.8838">200 OK response</text>
     </a>
   </g>
 </svg>
 </figure>
-            <div onclick="location.href='#!';" id="ca533263ab6d48df8f7eb1d23a105c77" class="overlay">
+            <div onclick="location.href='#!';" id="600afdec8fba4d39ab22e2f5c3211585" class="overlay">
                 <div class="popup" onclick="event.stopPropagation();">
                     <h2>PlantUml markup</h2>
-                    <span class="copy" title="copy" onclick="copyToClipboard('sequence_uml_codeca533263ab6d48df8f7eb1d23a105c77')"></span>
+                    <span class="copy" title="copy" onclick="copyToClipboard('sequence_uml_code600afdec8fba4d39ab22e2f5c3211585')"></span>
                     <a class="close" href="#!">&times;</a>
                     <div class="content">
-                        <pre><code id="sequence_uml_codeca533263ab6d48df8f7eb1d23a105c77">@startuml
+                        <pre><code id="sequence_uml_code600afdec8fba4d39ab22e2f5c3211585">@startuml
 
 !theme plain
 
@@ -86,11 +258,11 @@ hide unlinked
 
 
 
-App -&gt; Activities: &lt;text fill&#x3D;&quot;&quot;&gt;[[#1cd4f96c2d764b618764220288025768 {GET /activities/ae56cdfe-9941-49df-9bdb-499ac603ca7e} GET /activities/ae56cdfe-9941-49df-9bdb-499ac603ca7e]]&lt;/text&gt;
+App -&gt; Activities: &lt;text fill&#x3D;&quot;&quot;&gt;[[#751dc0583b884e7995b679f6e8875df7 {GET /activities/b9b84b18-e330-4146-90f9-04b5000fef64} GET /activities/b9b84b18-e330-4146-90f9-04b5000fef64]]&lt;/text&gt;
 
 activate Activities#skyblue
 
-Activities --&gt;&gt; App: &lt;text fill&#x3D;&quot;&quot;&gt;[[#89a90c0ce12a492e9efc68e39bc525d8 {200 OK response} 200 OK response]]&lt;/text&gt;
+Activities --&gt;&gt; App: &lt;text fill&#x3D;&quot;&quot;&gt;[[#4b3cae7de0304d57946e20016023b8c4 {200 OK response} 200 OK response]]&lt;/text&gt;
 
 deactivate Activities
 
@@ -99,11 +271,11 @@ deactivate Activities
                     </div>
                 </div>
             </div>
-            <sub><a href="#ca533263ab6d48df8f7eb1d23a105c77">[source]</a></sub>
-            <sub><a href="#e9e8d8d4612c4b6bb96a004cc22d98fd">[component diagram]</a></sub>
+            <sub><a href="#600afdec8fba4d39ab22e2f5c3211585">[source]</a></sub>
+            <sub><a href="#3f85a42e7d79468a953edd58648b37bd">[component diagram]</a></sub>
         </section>
         <!-- Popup for component diagram -->
-        <div onclick="location.href='#!';" id="e9e8d8d4612c4b6bb96a004cc22d98fd" class="overlay">
+        <div onclick="location.href='#!';" id="3f85a42e7d79468a953edd58648b37bd" class="overlay">
             <div class="popup" onclick="event.stopPropagation();">
                 <h2>Component Diagram</h2>
                 <a class="close" href="#!">&times;</a>
@@ -126,17 +298,17 @@ deactivate Activities
 </svg>
 </pre>
                 </div>
-                <sub><a href="#umle9e8d8d4612c4b6bb96a004cc22d98fd">[source]</a></sub>
+                <sub><a href="#uml3f85a42e7d79468a953edd58648b37bd">[source]</a></sub>
             </div>
         </div>
         <!-- Popup for component diagram UML via component diagram popup -->
-        <div onclick="location.href='#!';" id="umle9e8d8d4612c4b6bb96a004cc22d98fd" class="overlay">
+        <div onclick="location.href='#!';" id="uml3f85a42e7d79468a953edd58648b37bd" class="overlay">
             <div class="popup" onclick="event.stopPropagation();">
                 <h2>PlantUml markup</h2>
-                <span class="copy" title="copy" onclick="copyToClipboard('component_uml_codee9e8d8d4612c4b6bb96a004cc22d98fd')"></span>
-                <a class="close" href="#e9e8d8d4612c4b6bb96a004cc22d98fd">&times;</a><!--show previous popup on close-->
+                <span class="copy" title="copy" onclick="copyToClipboard('component_uml_code3f85a42e7d79468a953edd58648b37bd')"></span>
+                <a class="close" href="#3f85a42e7d79468a953edd58648b37bd">&times;</a><!--show previous popup on close-->
                 <div class="content">
-                    <pre><code id="component_uml_codee9e8d8d4612c4b6bb96a004cc22d98fd">@startuml
+                    <pre><code id="component_uml_code3f85a42e7d79468a953edd58648b37bd">@startuml
 !pragma layout smetana
 !theme plain
 skinparam backgroundColor transparent
@@ -153,200 +325,28 @@ remove @unlinked
         </div>
         <!-- Section containing data for sequence diagram popups -->
         
-        <div onclick="location.href='#!';" id="1cd4f96c2d764b618764220288025768" class="overlay">
+        <div onclick="location.href='#!';" id="751dc0583b884e7995b679f6e8875df7" class="overlay">
             <div class="popup" onclick="event.stopPropagation();">
-                <h2>GET /activities/ae56cdfe-9941-49df-9bdb-499ac603ca7e</h2>
+                <h2>GET /activities/b9b84b18-e330-4146-90f9-04b5000fef64</h2>
                 <a class="close" href="#!">&times;</a>
                 <div class="content">
-                    <pre><p><p><h4>Full Path</h4><span>/activities/ae56cdfe-9941-49df-9bdb-499ac603ca7e</span></p><p><h4>Request Headers</h4><code></code></p><p></p></p></pre>
+                    <pre><p><p><h4>Full Path</h4><span>/activities/b9b84b18-e330-4146-90f9-04b5000fef64</span></p><p><h4>Request Headers</h4><code></code></p><p></p></p></pre>
                 </div>
             </div>
         </div>
         
-        <div onclick="location.href='#!';" id="89a90c0ce12a492e9efc68e39bc525d8" class="overlay">
+        <div onclick="location.href='#!';" id="4b3cae7de0304d57946e20016023b8c4" class="overlay">
             <div class="popup" onclick="event.stopPropagation();">
                 <h2>200 OK response</h2>
                 <a class="close" href="#!">&times;</a>
                 <div class="content">
-                    <pre><p><p><h4>Full Path</h4><span>/activities/ae56cdfe-9941-49df-9bdb-499ac603ca7e</span></p><p><h4>Response Headers</h4><code>date: Sat, 25 Jun 2022 03:29:12 GMT
+                    <pre><p><p><h4>Full Path</h4><span>/activities/b9b84b18-e330-4146-90f9-04b5000fef64</span></p><p><h4>Response Headers</h4><code>date: Sun, 26 Jun 2022 03:39:22 GMT
 keep-alive: timeout=60
 transfer-encoding: chunked
 connection: keep-alive
 content-type: application/json</code></p><p><h4>Body</h4><code>{
-  &quot;id&quot;: &quot;ae56cdfe-9941-49df-9bdb-499ac603ca7e&quot;,
-  &quot;lessonId&quot;: &quot;a90d53a4-3b4b-461c-a652-937aee503d79&quot;,
-  &quot;inputQuestions&quot;: [ {
-    &quot;id&quot;: &quot;1&quot;,
-    &quot;displayOrder&quot;: 1,
-    &quot;question&quot;: &quot;question&quot;,
-    &quot;standardAnswer&quot;: &quot;answer&quot;,
-    &quot;maxScore&quot;: 5
-  } ],
-  &quot;maxScore&quot;: 5,
-  &quot;createdAt&quot;: &quot;2022-06-25T03:29:12.558675Z&quot;
-}</code></p></p></pre>
-                </div>
-            </div>
-        </div>
-        
-        
-    </article>
-    
-
-    <article id="b8a87934edb74a5bb092f7444f5b79ff">
-        <span onclick="location.href='#top';" title="top of page" class="back_to_top"></span>
-        <h2 class="success">calculate the max possible score for an activity #2</h2>
-        <section class="description success">
-            <h3 class="success">Description</h3>
-            Given  an existing activity with 2 questions and with 2 each</br>When  the activity is requested</br>Then  the activity's max score is 4
-        </section>
-        
-        
-        <section class="sequence diagram svg success">
-            <h3 class="success">Sequence Diagram</h3>
-            <figure><?xml version="1.0" encoding="UTF-8"?>
-
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="152px" preserveAspectRatio="none" style="width:491px;height:152px;background:#00000000;" version="1.1" viewBox="0 0 491 152" width="491px" zoomAndPan="magnify">
-  <defs/>
-  <g>
-    <rect fill="#87CEEB" height="29.7993" style="stroke:#000000;stroke-width:1.0;" width="10" x="441" y="68.814"/>
-    <line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="41" x2="41" y1="37.0146" y2="116.6133"/>
-    <line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="446" x2="446" y1="37.0146" y2="116.6133"/>
-    <rect fill="#FFFFFF" height="31.0146" style="stroke:#000000;stroke-width:1.0;" width="42" x="20" y="5"/>
-    <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="28" x="27" y="26.0752">App</text>
-    <rect fill="#FFFFFF" height="31.0146" style="stroke:#000000;stroke-width:1.0;" width="42" x="20" y="115.6133"/>
-    <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="28" x="27" y="136.6885">App</text>
-    <rect fill="#FFFFFF" height="31.0146" style="stroke:#000000;stroke-width:1.0;" width="78" x="407" y="5"/>
-    <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="64" x="414" y="26.0752">Activities</text>
-    <rect fill="#FFFFFF" height="31.0146" style="stroke:#000000;stroke-width:1.0;" width="78" x="407" y="115.6133"/>
-    <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="64" x="414" y="136.6885">Activities</text>
-    <rect fill="#87CEEB" height="29.7993" style="stroke:#000000;stroke-width:1.0;" width="10" x="441" y="68.814"/>
-    <polygon fill="#000000" points="429,64.814,439,68.814,429,72.814,433,68.814" style="stroke:#000000;stroke-width:1.0;"/>
-    <line style="stroke:#000000;stroke-width:1.0;" x1="41" x2="435" y1="68.814" y2="68.814"/>
-    <a href="#afe16e66f44948c3a4bc0977c18d35f8" target="_top" title="GET /activities/0ec155ee-857a-4d92-b273-5ac75a6a9ab8" xlink:actuate="onRequest" xlink:href="#afe16e66f44948c3a4bc0977c18d35f8" xlink:show="new" xlink:title="GET /activities/0ec155ee-857a-4d92-b273-5ac75a6a9ab8" xlink:type="simple">
-      <text fill="" font-family="Verdana" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="381" x="48" y="64.0845">GET /activities/0ec155ee-857a-4d92-b273-5ac75a6a9ab8</text>
-    </a>
-    <line style="stroke:#000000;stroke-width:1.0;" x1="41" x2="51" y1="98.6133" y2="94.6133"/>
-    <line style="stroke:#000000;stroke-width:1.0;" x1="41" x2="51" y1="98.6133" y2="102.6133"/>
-    <line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="41" x2="445" y1="98.6133" y2="98.6133"/>
-    <a href="#7210f4a52eab4cb0886ca2e05ffc289e" target="_top" title="200 OK response" xlink:actuate="onRequest" xlink:href="#7210f4a52eab4cb0886ca2e05ffc289e" xlink:show="new" xlink:title="200 OK response" xlink:type="simple">
-      <text fill="" font-family="Verdana" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="113" x="58" y="93.8838">200 OK response</text>
-    </a>
-  </g>
-</svg>
-</figure>
-            <div onclick="location.href='#!';" id="fa7df6e457674f4fb2de17b44d4e85e8" class="overlay">
-                <div class="popup" onclick="event.stopPropagation();">
-                    <h2>PlantUml markup</h2>
-                    <span class="copy" title="copy" onclick="copyToClipboard('sequence_uml_codefa7df6e457674f4fb2de17b44d4e85e8')"></span>
-                    <a class="close" href="#!">&times;</a>
-                    <div class="content">
-                        <pre><code id="sequence_uml_codefa7df6e457674f4fb2de17b44d4e85e8">@startuml
-
-!theme plain
-
-skinparam backgroundColor transparent
-
-hide unlinked
-
-
-!include &lt;tupadr3/font-awesome-5/clock&gt;
-
-!include &lt;tupadr3/font-awesome-5/database&gt;
-
-
-
-
-
-App -&gt; Activities: &lt;text fill&#x3D;&quot;&quot;&gt;[[#afe16e66f44948c3a4bc0977c18d35f8 {GET /activities/0ec155ee-857a-4d92-b273-5ac75a6a9ab8} GET /activities/0ec155ee-857a-4d92-b273-5ac75a6a9ab8]]&lt;/text&gt;
-
-activate Activities#skyblue
-
-Activities --&gt;&gt; App: &lt;text fill&#x3D;&quot;&quot;&gt;[[#7210f4a52eab4cb0886ca2e05ffc289e {200 OK response} 200 OK response]]&lt;/text&gt;
-
-deactivate Activities
-
-
-@enduml</code></pre>
-                    </div>
-                </div>
-            </div>
-            <sub><a href="#fa7df6e457674f4fb2de17b44d4e85e8">[source]</a></sub>
-            <sub><a href="#065680fd57f64b70b6b0125dac91313b">[component diagram]</a></sub>
-        </section>
-        <!-- Popup for component diagram -->
-        <div onclick="location.href='#!';" id="065680fd57f64b70b6b0125dac91313b" class="overlay">
-            <div class="popup" onclick="event.stopPropagation();">
-                <h2>Component Diagram</h2>
-                <a class="close" href="#!">&times;</a>
-                <div class="content">
-                    <pre><?xml version="1.0" encoding="UTF-8"?>
-
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="141px" preserveAspectRatio="none" style="width:86px;height:141px;background:#00000000;" version="1.1" viewBox="0 0 86 141" width="86px" zoomAndPan="magnify">
-  <defs/>
-  <g>
-    <rect fill="#FFFFFF" height="47.0146" style="stroke:#000000;stroke-width:1.0;" width="68" x="12" y="10.0146"/>
-    <rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="60" y="15.0146"/>
-    <rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="58" y="17.0146"/>
-    <rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="58" y="21.0146"/>
-    <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="28" x="27" y="44.0898">App</text>
-    <ellipse cx="46" cy="102.0146" fill="#FFFFFF" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/>
-    <text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="64" x="14" y="133.0898">Activities</text>
-    <path d="M46,57.2715 C46,69.148 46,83.1547 46,92.7178 " fill="none" style="stroke:#000000;stroke-width:1.0;"/>
-    <polygon fill="#000000" points="46,92.7178,50,83.7178,46,87.7178,42,83.7178,46,92.7178" style="stroke:#000000;stroke-width:1.0;"/>
-  </g>
-</svg>
-</pre>
-                </div>
-                <sub><a href="#uml065680fd57f64b70b6b0125dac91313b">[source]</a></sub>
-            </div>
-        </div>
-        <!-- Popup for component diagram UML via component diagram popup -->
-        <div onclick="location.href='#!';" id="uml065680fd57f64b70b6b0125dac91313b" class="overlay">
-            <div class="popup" onclick="event.stopPropagation();">
-                <h2>PlantUml markup</h2>
-                <span class="copy" title="copy" onclick="copyToClipboard('component_uml_code065680fd57f64b70b6b0125dac91313b')"></span>
-                <a class="close" href="#065680fd57f64b70b6b0125dac91313b">&times;</a><!--show previous popup on close-->
-                <div class="content">
-                    <pre><code id="component_uml_code065680fd57f64b70b6b0125dac91313b">@startuml
-!pragma layout smetana
-!theme plain
-skinparam backgroundColor transparent
-
-
-
-[App] --&gt; Activities
-
-
-remove @unlinked
-@enduml</code></pre>
-                </div>
-            </div>
-        </div>
-        <!-- Section containing data for sequence diagram popups -->
-        
-        <div onclick="location.href='#!';" id="afe16e66f44948c3a4bc0977c18d35f8" class="overlay">
-            <div class="popup" onclick="event.stopPropagation();">
-                <h2>GET /activities/0ec155ee-857a-4d92-b273-5ac75a6a9ab8</h2>
-                <a class="close" href="#!">&times;</a>
-                <div class="content">
-                    <pre><p><p><h4>Full Path</h4><span>/activities/0ec155ee-857a-4d92-b273-5ac75a6a9ab8</span></p><p><h4>Request Headers</h4><code></code></p><p></p></p></pre>
-                </div>
-            </div>
-        </div>
-        
-        <div onclick="location.href='#!';" id="7210f4a52eab4cb0886ca2e05ffc289e" class="overlay">
-            <div class="popup" onclick="event.stopPropagation();">
-                <h2>200 OK response</h2>
-                <a class="close" href="#!">&times;</a>
-                <div class="content">
-                    <pre><p><p><h4>Full Path</h4><span>/activities/0ec155ee-857a-4d92-b273-5ac75a6a9ab8</span></p><p><h4>Response Headers</h4><code>date: Sat, 25 Jun 2022 03:29:12 GMT
-keep-alive: timeout=60
-transfer-encoding: chunked
-connection: keep-alive
-content-type: application/json</code></p><p><h4>Body</h4><code>{
-  &quot;id&quot;: &quot;0ec155ee-857a-4d92-b273-5ac75a6a9ab8&quot;,
-  &quot;lessonId&quot;: &quot;6f3f3d47-b3c4-457e-9527-67924cb526de&quot;,
+  &quot;id&quot;: &quot;b9b84b18-e330-4146-90f9-04b5000fef64&quot;,
+  &quot;lessonId&quot;: &quot;b98fd835-fb4e-4428-808b-5ba0690bbc9c&quot;,
   &quot;inputQuestions&quot;: [ {
     &quot;id&quot;: &quot;1&quot;,
     &quot;displayOrder&quot;: 1,
@@ -361,7 +361,7 @@ content-type: application/json</code></p><p><h4>Body</h4><code>{
     &quot;maxScore&quot;: 2
   } ],
   &quot;maxScore&quot;: 4,
-  &quot;createdAt&quot;: &quot;2022-06-25T03:29:12.801399Z&quot;
+  &quot;createdAt&quot;: &quot;2022-06-26T03:39:22.560873Z&quot;
 }</code></p></p></pre>
                 </div>
             </div>
