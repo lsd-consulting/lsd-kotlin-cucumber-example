@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Set up JDK 11
-        uses: actions/setup-java@v2
+        uses: actions/setup-java@v3
         with:
           java-version: '11'
           distribution: 'adopt'
@@ -28,12 +28,12 @@ jobs:
         with:
           branch: gh-pages
           folder: service/build/reports/lsd
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         if: always()
         with:
           name: build-directory
           path: service/build
-      - uses: codecov/codecov-action@v1
+      - uses: codecov/codecov-action@v3
         with:
           files: service/build/reports/jacoco/test/jacocoTestReport.xml
           verbose: true
