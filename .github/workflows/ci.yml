@@ -4,11 +4,7 @@
 #  https://github.com/marketplace/actions/action-for-semantic-release
 
 name: CI
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: [ push, pull_request ]
 jobs:
   build:
     runs-on: macos-latest
@@ -24,12 +20,11 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
       - name: Publish LSD report
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
           branch: gh-pages
           folder: service/build/reports/lsd
       - uses: actions/upload-artifact@v3
-        if: always()
         with:
           name: build-directory
           path: service/build

@@ -15,12 +15,12 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
       - name: Publish LSD report
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
           branch: gh-pages
           folder: service/build/reports/lsd
       - name: Publish Unit Test Results
-        uses: EnricoMi/publish-unit-test-result-action/composite@v1
+        uses: EnricoMi/publish-unit-test-result-action/composite@v2
         if: always()
         with:
           files: "service/build/test-results/**/*.xml"
