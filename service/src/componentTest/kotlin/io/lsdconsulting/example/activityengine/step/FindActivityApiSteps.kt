@@ -38,11 +38,11 @@ class FindActivityApiSteps(
                 ActivityRequest(lessonId = lessonId),
                 ActivityResponse::class.java
             )
-            LsdContext.getInstance().addFact("lessonId", lessonId)
+            LsdContext.instance.addFact("lessonId", lessonId)
         }
 
         Given("a non existent lessonId") {
-            LsdContext.getInstance().capture("message from A to B", "hello")
+            LsdContext.instance.capture("message from A to B", "hello")
         }
 
         When("the activity is requested by its id") {

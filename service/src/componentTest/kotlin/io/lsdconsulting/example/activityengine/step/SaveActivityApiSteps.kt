@@ -29,7 +29,7 @@ class SaveActivityApiSteps(
         testRestTemplate.restTemplate.interceptors.clear()
 
         Given("a request to save an empty activity") {
-            LsdContext.getInstance().addFact("lessonId", lessonId)
+            LsdContext.instance.addFact("lessonId", lessonId)
 
             activityRequest = ActivityRequest(lessonId = lessonId)
         }
@@ -37,7 +37,7 @@ class SaveActivityApiSteps(
         When("the request is received") {
             activityResponse = activityEngineClient.save(activityRequest)
 
-            LsdContext.getInstance().addFact("activity id", activityResponse.body?.id)
+            LsdContext.instance.addFact("activity id", activityResponse.body?.id ?: "")
         }
 
         Then("the request is accepted") {
@@ -51,7 +51,7 @@ class SaveActivityApiSteps(
         }
 
         Given("a request to save an activity with a question") {
-            LsdContext.getInstance().addFact("lessonId", lessonId)
+            LsdContext.instance.addFact("lessonId", lessonId)
 
             val inputQuestion = InputQuestion(
                 id = UUID.randomUUID().toString(),
