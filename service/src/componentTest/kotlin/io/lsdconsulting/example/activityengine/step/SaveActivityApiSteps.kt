@@ -1,6 +1,6 @@
 package io.lsdconsulting.example.activityengine.step
 
-import com.lsd.LsdContext
+import com.lsd.core.LsdContext
 import io.cucumber.java8.En
 import io.lsdconsulting.example.activityengine.api.request.ActivityRequest
 import io.lsdconsulting.example.activityengine.api.response.ActivityResponse

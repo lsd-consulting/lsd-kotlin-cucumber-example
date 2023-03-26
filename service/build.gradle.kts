@@ -55,27 +55,27 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
     testImplementation("org.hamcrest:hamcrest-core:2.2")
-    testImplementation("org.junit.platform:junit-platform-commons:1.8.1")
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
+    testImplementation("org.junit.platform:junit-platform-commons:1.9.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.9.2")
 
     //////////////////////////////////
     // Component test dependencies
     componentTestImplementation("org.springframework.boot:spring-boot-starter-test")
 
-    componentTestImplementation("io.github.lsd-consulting:lsd-cucumber:+") {
+    componentTestImplementation("io.github.lsd-consulting:lsd-cucumber:2.+") {
         because("we want to include the Cucumber scenarios in the LSDs")
     }
 
-    componentTestImplementation("io.github.lsd-consulting:lsd-interceptors:+") {
+    componentTestImplementation("io.github.lsd-consulting:lsd-interceptors:2.+") {
         because("we want to include the Cucumber scenarios in the LSDs")
     }
 
     // JUnit 5
-    componentTestImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1") {
+    componentTestImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2") {
         because("we want to use JUnit 5")
     }
-    componentTestImplementation("org.junit.jupiter:junit-jupiter-params:5.8.1") {
+    componentTestImplementation("org.junit.jupiter:junit-jupiter-params:5.9.2") {
         because("we want to run parameterised tests")
     }
 
