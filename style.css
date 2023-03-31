@@ -12,7 +12,7 @@ article {
 }
 
 section {
-    overflow: scroll;
+    overflow: auto;
 }
 
 section.description {
@@ -158,6 +158,10 @@ p {
 
 a, svg a text {
     text-decoration: none;
+}
+
+svg {
+    display: block;
 }
 
 input[type="range"] {

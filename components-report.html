@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html" xml:lang="en" lang="en">
+<head>
+    <title>LSD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main role="main">
+    <h1 class="logo">LSD</h1>
+    <h2>Combined Component Diagram</h2>
+    <div class="contents">
+        <section class="sequence diagram svg">
+            <h3 class="success">Component Diagram</h3>
+            <figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="148px" preserveAspectRatio="none" style="width:153px;height:148px;" version="1.1" viewBox="0 0 153 148" width="153px" zoomAndPan="magnify"><defs/><g><!--entity App--><g id="elem_App"><rect fill="#FFFFFF" height="47.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="68" x="11" y="17"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="59" y="22"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="57" y="24"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="57" y="28"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="28" x="26" y="51.0752">App</text></g><!--entity Activities--><g id="elem_Activities"><ellipse cx="45" cy="109" fill="#FFFFFF" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="64" x="13" y="140.0752">Activities</text></g><!--entity A--><g id="elem_A"><rect fill="#FFFFFF" height="47.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="50" x="97" y="17"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="127" y="22"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="125" y="24"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="125" y="28"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="10" x="112" y="51.0752">A</text></g><!--entity B--><g id="elem_B"><ellipse cx="122" cy="109" fill="#FFFFFF" rx="8" ry="8" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="10" x="117" y="140.0752">B</text></g><path d="M45,64.2569 C45,76.1333 45,90.1401 45,99.7032 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="45,99.7032,49,90.7032,45,94.7032,41,90.7032,45,99.7032" style="stroke:#000000;stroke-width:1.0;"/><path d="M122,64.2569 C122,76.1333 122,90.1401 122,99.7032 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="122,99.7032,126,90.7032,122,94.7032,118,90.7032,122,99.7032" style="stroke:#000000;stroke-width:1.0;"/></g></svg></figure>
+            <div onclick="location.href='#!';" id="source" class="overlay">
+                <div class="popup" onclick="event.stopPropagation();">
+                    <h2>PlantUml markup</h2>
+                    <span class="copy" title="copy" onclick="copyToClipboard('uml_code')"></span>
+                    <a class="close" href="#!">&times;</a>
+                    <div class="content">
+                        <pre><code id="uml_code">@startuml
+!pragma layout smetana
+!theme plain
+skinparam backgroundColor transparent
+
+
+
+[App] --&gt; Activities
+[A] --&gt; B
+
+
+remove @unlinked
+@enduml</code></pre>
+                    </div>
+                </div>
+            </div>
+            <sub><a href="#source">[source]</a></sub>
+        </section>
+    </div>
+</main>
+</body>
+</html>
