@@ -23,8 +23,8 @@ Feature: Find activity
 
 1. Add the following test dependencies:
 ```groovy
-componentTestImplementation("com.lsd:lsd-core:+")
-componentTestImplementation("com.lsd:lsd-interceptors:+")
+componentTestImplementation("io.github.lsd-consulting:lsd-cucumber:+")
+componentTestImplementation("io.github.lsd-consulting:lsd-interceptors:+")
 ```
 
 2. Include the LSD Cucumber plugin, for example by setting the `cucumber.plugin` property in the `junit-platform.properties` file:

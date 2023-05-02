@@ -1,6 +1,7 @@
 package io.lsdconsulting.example.activityengine.step
 
 import com.lsd.core.LsdContext
+import com.lsd.core.builders.MessageBuilder.Companion.messageBuilder
 import io.cucumber.java8.En
 import io.cucumber.spring.CucumberContextConfiguration
 import io.lsdconsulting.example.activityengine.ActivityEngineApplication
@@ -42,7 +43,7 @@ class FindActivityApiSteps(
         }
 
         Given("a non existent lessonId") {
-            LsdContext.instance.capture("message from A to B", "hello")
+            LsdContext.instance.capture(messageBuilder().from("A").to("B").label("message").data("hello").build())
         }
 
         When("the activity is requested by its id") {
