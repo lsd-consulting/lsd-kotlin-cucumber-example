@@ -54,7 +54,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
-    testImplementation("org.hamcrest:hamcrest-core:2.2")
+    testImplementation("org.hamcrest:hamcrest-core:3.0")
     testImplementation("org.junit.platform:junit-platform-commons:1.9.2")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.9.2")
