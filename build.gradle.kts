@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.8.10"
-    kotlin("plugin.spring") version "1.8.10"
+    kotlin("plugin.spring") version "2.2.21"
     id("java")
     id("io.spring.dependency-management") version "1.0.9.RELEASE"
 }
