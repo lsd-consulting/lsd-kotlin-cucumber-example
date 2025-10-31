@@ -56,8 +56,8 @@ dependencies {
 
     testImplementation("org.hamcrest:hamcrest-core:2.2")
     testImplementation("org.junit.platform:junit-platform-commons:1.9.2")
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.9.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:6.0.0")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:6.0.0")
 
     //////////////////////////////////
     // Component test dependencies
@@ -72,10 +72,10 @@ dependencies {
     }
 
     // JUnit 5
-    componentTestImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2") {
+    componentTestImplementation("org.junit.jupiter:junit-jupiter-api:6.0.0") {
         because("we want to use JUnit 5")
     }
-    componentTestImplementation("org.junit.jupiter:junit-jupiter-params:5.9.2") {
+    componentTestImplementation("org.junit.jupiter:junit-jupiter-params:6.0.0") {
         because("we want to run parameterised tests")
     }
 
