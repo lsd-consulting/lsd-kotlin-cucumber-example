@@ -15,7 +15,7 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
       - name: Publish LSD report
-        uses: JamesIves/github-pages-deploy-action@v4.4.1
+        uses: JamesIves/github-pages-deploy-action@v4.7.4
         with:
           branch: gh-pages
           folder: service/build/reports/lsd
