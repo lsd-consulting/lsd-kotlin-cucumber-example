@@ -89,7 +89,7 @@ dependencies {
     componentTestImplementation("io.cucumber:cucumber-spring:6.11.0") {
         because("we want to use dependency injection in our Cucumber tests")
     }
-    componentTestImplementation("de.monochromata.cucumber:reporting-plugin:4.0.103") {
+    componentTestImplementation("de.monochromata.cucumber:reporting-plugin:5.0.0") {
         because("we want to see useful Cucumber reports")
     }
 }
