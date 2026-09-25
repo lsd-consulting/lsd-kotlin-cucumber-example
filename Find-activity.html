@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <title>find-activity</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lsd-consulting/lsd-core@6/src/main/resources/static/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lsd-consulting/lsd-core@8/src/main/resources/static/style.min.css">
 
 </head>
 <body>
@@ -11,100 +11,105 @@
             <div class="dropdown">
                 <label class="dropdown">Scenarios</label>
                 <div class="dropdown-content">
-                        <a class="success" href="#6eb2f0e52ab94933a9e4f6337ef86e76">find an activity by id</a>
-                        <a class="success" href="#ce76a6ec67564d4498785832ea48bd8d">find an activity by lessonId</a>
-                        <a class="success" href="#52874e0deb404f39b8df88001ee96169">return empty list when there is no activity with the requested lessonId</a>
+                        <a class="success" href="#387d984a0a7340a0b803e141e9702720">find an activity by id</a>
+                        <a class="success" href="#c10e5342932e4655822076303e9ff4fa">find an activity by lessonId</a>
+                        <a class="success" href="#e87b07ba3f1347358ca346938856aaa9">return empty list when there is no activity with the requested lessonId</a>
                 </div>
             </div>
         </div>
-    <h1 class="logo">LSD</h1>
-    <h1>find-activity</h1><article id="6eb2f0e52ab94933a9e4f6337ef86e76">
-        <span class="articleStart"></span>
-        <h2 class="success">find an activity by id</h2><section class="description success">
-            <h3 class="success">Description</h3>
-            Given  an existing activity with lessonId ABC</br>When  the activity is requested by its id</br>Then  the activity with lessonId ABC is returned
-        </section>
-        <aside class="facts">
-            <div class="table">
-                <h3>Key Facts</h3>
-                <div class="row">
-                    <div class="rowHead">Description</div>
-                    <div class="rowHead">Value</div>
-                </div><div class="row">
-                    <div class="cell">lessonId</div>
-                    <div class="cell">ABC</div>
+    <a href="https://github.com/lsd-consulting/lsd-core?utm_source=lsd-report&utm_medium=logo&utm_campaign=html-report" target="_blank" rel="noopener noreferrer" class="logo-link">
+        <video class="logo-video" muted playsinline>
+            <source src="https://cdn.jsdelivr.net/gh/lsd-consulting/lsd-core@main/src/main/resources/static/lsd_logo_animated.mp4" type="video/mp4">
+        </video>
+    </a>
+    <h1>find-activity</h1><details class="success" open>
+        <summary class="success">
+            <h2 class="success">find an activity by id</h2>
+        </summary>
+        <article id="387d984a0a7340a0b803e141e9702720" class="success">
+        <div class="cards-row"><section class="card description success">
+                <h3 class="success">Description</h3>
+                Given  an existing activity with lessonId ABC</br>When  the activity is requested by its id</br>Then  the activity with lessonId ABC is returned
+            </section>
+            
+            <section class="card facts success">
+                <h3 class="success">Key Facts</h3>
+                <div class="table">
+                    <div class="row">
+                        <div class="rowHead">Description</div>
+                        <div class="rowHead">Value</div>
+                    </div><div class="row">
+                        <div class="cell">lessonId</div>
+                        <div class="cell">ABC</div>
+                    </div>
                 </div>
-            </div>
-        </aside>
-        
-        <section class="sequence diagram svg success">
+            </section>
+        </div>
+        <section class="diagram-row sequence diagram svg success">
             <h3 class="success">Sequence Diagram</h3>
-            <figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="210px" preserveAspectRatio="none" style="width:479px;height:210px;background:#FFFFFF;" version="1.1" viewBox="0 0 479 210" width="479px" zoomAndPan="magnify"><defs/><g><text fill="#656D76" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="284" x="99.25" y="39.5352">When the activity is requested by its id</text><line style="stroke:#708090;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="36" x2="36" y1="90.9766" y2="169.5977"/><line style="stroke:#708090;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="430.5" x2="430.5" y1="90.9766" y2="169.5977"/><rect fill="#FFFFFF" height="30.4883" rx="2.5" ry="2.5" style="stroke:#7D8590;stroke-width:1.5;" width="42" x="15" y="59.4883"/><text fill="#8392A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="22" y="80.0234">App</text><rect fill="#FFFFFF" height="30.4883" rx="2.5" ry="2.5" style="stroke:#7D8590;stroke-width:1.5;" width="42" x="15" y="168.5977"/><text fill="#8392A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="22" y="189.1328">App</text><rect fill="#FFFFFF" height="30.4883" rx="2.5" ry="2.5" style="stroke:#7D8590;stroke-width:1.5;" width="75" x="393.5" y="59.4883"/><text fill="#8392A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="400.5" y="80.0234">Activities</text><rect fill="#FFFFFF" height="30.4883" rx="2.5" ry="2.5" style="stroke:#7D8590;stroke-width:1.5;" width="75" x="393.5" y="168.5977"/><text fill="#8392A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="400.5" y="189.1328">Activities</text><polygon fill="#7D8590" points="419,118.2871,429,122.2871,419,126.2871,423,122.2871" style="stroke:#7D8590;stroke-width:1.0;"/><line style="stroke:#7D8590;stroke-width:1.5;" x1="36" x2="425" y1="122.2871" y2="122.2871"/><a href="#d03b8056f6c3490cbd68ff0a60e422a7" target="_self" title="GET /activities/37ccbf49-4441-4dfe-beb4-d02d0b4f29fb" xlink:actuate="onRequest" xlink:href="#d03b8056f6c3490cbd68ff0a60e422a7" xlink:show="new" xlink:title="GET /activities/37ccbf49-4441-4dfe-beb4-d02d0b4f29fb" xlink:type="simple"><text fill="#656D76" font-family="sans-serif" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="371" x="43" y="117.5449">GET /activities/37ccbf49-4441-4dfe-beb4-d02d0b4f29fb</text></a><polygon fill="#7D8590" points="47,147.5977,37,151.5977,47,155.5977,43,151.5977" style="stroke:#7D8590;stroke-width:1.0;"/><line style="stroke:#7D8590;stroke-width:1.5;stroke-dasharray:2.0,2.0;" x1="41" x2="430" y1="151.5977" y2="151.5977"/><a href="#ad909474c69f4fcc8f3d380c8fa975c4" target="_self" title="200 OK (3ms)" xlink:actuate="onRequest" xlink:href="#ad909474c69f4fcc8f3d380c8fa975c4" xlink:show="new" xlink:title="200 OK (3ms)" xlink:type="simple"><text fill="#656D76" font-family="sans-serif" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="85" x="53" y="146.8555">200 OK (3ms)</text></a></g></svg></figure>
-            <div onclick="location.href='#!';" id="fb668bd58d6445718edda1a5b877f19f" class="overlay">
+            <figure><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="SEQUENCE" style="width:587px;height:180px;background:#FFFFFF;" width="587px" height="180px" viewBox="0 0 587 180" zoomAndPan="magnify" preserveAspectRatio="none" contentStyleType="text/css"><?plantuml 1.2026.8?><defs/><g font-family="sans-serif" lengthAdjust="spacing"><g><title>Lsd_kotlin_cucumber_example</title><rect x="122.594" y="51.488" width="8" height="76.621" fill="#000" fill-opacity="0"/><line x1="126.094" y1="51.488" x2="126.094" y2="128.109" style="stroke:#000;stroke-width:1;stroke-dasharray:5,5;"/></g><g><title>Activities</title><rect x="530.333" y="51.488" width="8" height="76.621" fill="#000" fill-opacity="0"/><line x1="533.833" y1="51.488" x2="533.833" y2="128.109" style="stroke:#000;stroke-width:1;stroke-dasharray:5,5;"/></g><g><title></title><rect x="528.833" y="80.799" width="10" height="29.311" fill="#87CEEB" style="stroke:#000;stroke-width:1;"/></g><rect x="15" y="15" width="222.188" height="30.488" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><text x="22" y="35.535" fill="#000" font-size="14" textLength="208.188" font-family="Hack">Lsd_kotlin_cucumber_example</text><rect x="496.021" y="15" width="75.626" height="30.488" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><text x="503.021" y="35.535" fill="#000" font-size="14" textLength="61.626" font-family="Hack">Activities</text><rect x="15" y="133.109" width="222.188" height="30.488" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><text x="22" y="153.645" fill="#000" font-size="14" textLength="208.188" font-family="Hack">Lsd_kotlin_cucumber_example</text><rect x="496.021" y="133.109" width="75.626" height="30.488" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><text x="503.021" y="153.645" fill="#000" font-size="14" textLength="61.626" font-family="Hack">Activities</text><polygon points="516.833,76.799,526.833,80.799,516.833,84.799,520.833,80.799" fill="#000" style="stroke:#000;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/><line x1="126.094" y1="80.799" x2="522.833" y2="80.799" style="stroke:#000;stroke-width:1;"/><a target="_self" href="#f7871e413df44f07af4c35abb2bd39e2" xlink:href="#f7871e413df44f07af4c35abb2bd39e2" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" title="GET /activities/b98c8c70-4a02-45ef-868e-2c422116a4b4" xlink:title="GET /activities/b98c8c70-4a02-45ef-868e-2c422116a4b4"><text x="133.094" y="76.057" fill="#333" font-size="13" textLength="378.739" text-decoration="underline" font-family="Hack">GET /activities/b98c8c70-4a02-45ef-868e-2c422116a4b4</text></a><polygon points="137.094,106.109,127.094,110.109,137.094,114.109,133.094,110.109" fill="#000" style="stroke:#000;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/><line x1="131.094" y1="110.109" x2="527.833" y2="110.109" style="stroke:#000;stroke-width:1;stroke-dasharray:2,2;"/><a target="_self" href="#c50fe63955f1468099e3110f786bc002" xlink:href="#c50fe63955f1468099e3110f786bc002" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" title="200 OK (2ms)" xlink:title="200 OK (2ms)"><text x="143.094" y="105.367" fill="#333" font-size="13" textLength="86.912" text-decoration="underline" font-family="Hack">200 OK (2ms)</text></a></g></svg></figure>
+            <div onclick="location.href='#!';" id="6d83287605bd492c83cea5c573b51861" class="overlay">
                 <div class="popup" onclick="event.stopPropagation();">
                     <h2>PlantUml markup</h2>
-                    <span class="copy" title="copy" onclick="copyToClipboard('sequence_uml_codefb668bd58d6445718edda1a5b877f19f')"></span>
+                    <span class="copy" title="copy" onclick="copyToClipboard('sequence_uml_code6d83287605bd492c83cea5c573b51861')"></span>
                     <a class="close" href="#!">&times;</a>
                     <div class="content">
-                        <pre><code id="sequence_uml_codefb668bd58d6445718edda1a5b877f19f">
-@startuml
+                        <pre><code id="sequence_uml_code6d83287605bd492c83cea5c573b51861">@startuml
 
-!theme lsd-light from https://cdn.jsdelivr.net/gh/lsd-consulting/lsd-core@6/src/main/resources/static/
+!theme mono
 skinparam svgLinkTarget _self
 
 hide unlinked
 
-!include &lt;tupadr3/font-awesome-5/clock&gt;
 !include &lt;tupadr3/font-awesome-5/database&gt;
+!include &lt;tupadr3/font-awesome-5/clock&gt;
 
 
-participant App
+participant Lsd_kotlin_cucumber_example
 participant Activities
 
 
+Lsd_kotlin_cucumber_example -&gt; Activities: [[#f7871e413df44f07af4c35abb2bd39e2 {GET /activities/b98c8c70-4a02-45ef-868e-2c422116a4b4} GET /activities/b98c8c70-4a02-45ef-868e-2c422116a4b4]]
+activate Activities#skyblue
+Activities --&gt; Lsd_kotlin_cucumber_example: [[#c50fe63955f1468099e3110f786bc002 {200 OK (2ms)} 200 OK (2ms)]]
+deactivate Activities
 
-title When the activity is requested by its id
 
-App -&gt; Activities: [[#d03b8056f6c3490cbd68ff0a60e422a7 {GET /activities/37ccbf49-4441-4dfe-beb4-d02d0b4f29fb} GET /activities/37ccbf49-4441-4dfe-beb4-d02d0b4f29fb]]
-Activities --&gt; App: [[#ad909474c69f4fcc8f3d380c8fa975c4 {200 OK (3ms)} 200 OK (3ms)]]
-
-
-@enduml
-</code></pre>
+@enduml</code></pre>
                     </div>
                 </div>
             </div>
-            <sub><a href="#fb668bd58d6445718edda1a5b877f19f">[source]</a></sub>
-            <sub><a href="#062abacf81f545a3b71058c2ffe507f6">[component diagram]</a></sub>
+            <sub><a href="#6d83287605bd492c83cea5c573b51861">[source]</a></sub>
+            <sub><a href="#0b217597ae0c4a8ab1714ed92309a419">[component diagram]</a></sub>
         </section>
         <!-- Popup for component diagram -->
-        <div onclick="location.href='#!';" id="062abacf81f545a3b71058c2ffe507f6" class="overlay">
+        <div onclick="location.href='#!';" id="0b217597ae0c4a8ab1714ed92309a419" class="overlay">
             <div class="popup" onclick="event.stopPropagation();">
                 <h2>Component Diagram</h2>
                 <a class="close" href="#!">&times;</a>
                 <div class="content">
-                    <pre><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="153px" preserveAspectRatio="none" style="width:121px;height:153px;" version="1.1" viewBox="0 0 121 153" width="121px" zoomAndPan="magnify"><defs/><g><!--entity App--><g id="elem_App"><rect fill="#FFFFFF" height="47.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="68" x="29" y="17"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="77" y="22"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="75" y="24"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="75" y="28"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="28" x="44" y="51.0752">App</text></g><!--entity Activities--><g id="elem_Activities"><rect fill="#FFFFFF" height="47.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="104" x="11" y="100"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="95" y="105"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="93" y="107"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="93" y="111"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="64" x="26" y="134.0752">Activities</text></g><path d="M63,64.063 C63,75.204 63,88.6144 63,99.7771 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="63,99.7771,67,90.7771,63,94.7771,59,90.7771,63,99.7771" style="stroke:#000000;stroke-width:1.0;"/></g></svg></pre>
+                    <pre><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="DESCRIPTION" style="width:285px;height:163px;" width="285px" height="163px" viewBox="0 0 285 163" zoomAndPan="magnify" preserveAspectRatio="none" contentStyleType="text/css"><?plantuml 1.2026.8?><defs/><g font-family="sans-serif" lengthAdjust="spacing"><!--entity Lsd_kotlin_cucumber_example--><g class="entity" data-qualified-name="Lsd_kotlin_cucumber_example" id="ent0001" data-source-line="5"><rect x="11" y="17" width="257.868" height="47.015" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><rect x="248.868" y="22" width="15" height="10" fill="#FFF" style="stroke:#000;stroke-width:1;"/><rect x="246.868" y="24" width="4" height="2" fill="#FFF" style="stroke:#000;stroke-width:1;"/><rect x="246.868" y="28" width="4" height="2" fill="#FFF" style="stroke:#000;stroke-width:1;"/><text x="26" y="51.075" fill="#000" font-size="14" textLength="217.868" font-family="Verdana">Lsd_kotlin_cucumber_example</text></g><!--entity Activities--><g class="entity" data-qualified-name="Activities" id="ent0002" data-source-line="6"><rect x="88.5" y="100" width="103.342" height="47.015" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><rect x="171.842" y="105" width="15" height="10" fill="#FFF" style="stroke:#000;stroke-width:1;"/><rect x="169.842" y="107" width="4" height="2" fill="#FFF" style="stroke:#000;stroke-width:1;"/><rect x="169.842" y="111" width="4" height="2" fill="#FFF" style="stroke:#000;stroke-width:1;"/><text x="103.5" y="134.075" fill="#000" font-size="14" textLength="63.342" font-family="Verdana">Activities</text></g><g class="link" data-entity-1="ent0001" data-entity-2="ent0002" id="lnk3" data-link-type="dependency"><polygon points="140,99.777,144,90.777,140,94.777,136,90.777,140,99.777" fill="#000" style="stroke:#000;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/><path d="M140,64.063 C140,75.204 140,83.614 140,94.777" style="stroke:#000;stroke-width:1;" fill="none"/></g></g></svg></pre>
                 </div>
-                <sub><a href="#uml062abacf81f545a3b71058c2ffe507f6">[source]</a></sub>
+                <sub><a href="#uml0b217597ae0c4a8ab1714ed92309a419">[source]</a></sub>
             </div>
         </div>
         <!-- Popup for component diagram UML via component diagram popup -->
-        <div onclick="location.href='#!';" id="uml062abacf81f545a3b71058c2ffe507f6" class="overlay">
+        <div onclick="location.href='#!';" id="uml0b217597ae0c4a8ab1714ed92309a419" class="overlay">
             <div class="popup" onclick="event.stopPropagation();">
                 <h2>PlantUml markup</h2>
-                <span class="copy" title="copy" onclick="copyToClipboard('component_uml_code062abacf81f545a3b71058c2ffe507f6')"></span>
-                <a class="close" href="#062abacf81f545a3b71058c2ffe507f6">&times;</a><!--show previous popup on close-->
+                <span class="copy" title="copy" onclick="copyToClipboard('component_uml_code0b217597ae0c4a8ab1714ed92309a419')"></span>
+                <a class="close" href="#0b217597ae0c4a8ab1714ed92309a419">&times;</a><!--show previous popup on close-->
                 <div class="content">
-                    <pre><code id="component_uml_code062abacf81f545a3b71058c2ffe507f6">@startuml
+                    <pre><code id="component_uml_code0b217597ae0c4a8ab1714ed92309a419">@startuml
 !pragma layout smetana
 !theme plain
 skinparam backgroundColor transparent
 
-component App
+component Lsd_kotlin_cucumber_example
 component Activities
 
 
-[App] --&gt; Activities
+[Lsd_kotlin_cucumber_example] --&gt; Activities
 
 
 remove @unlinked
@@ -112,120 +117,122 @@ remove @unlinked
                 </div>
             </div>
         </div>
-        <!-- Section containing data for sequence diagram popups --><div onclick="location.href='#!';" id="d03b8056f6c3490cbd68ff0a60e422a7" class="overlay">
+        <!-- Section containing data for sequence diagram popups --><div onclick="location.href='#!';" id="f7871e413df44f07af4c35abb2bd39e2" class="overlay">
             <div class="popup" onclick="event.stopPropagation();">
-                <h2>GET /activities/37ccbf49-4441-4dfe-beb4-d02d0b4f29fb</h2>
+                <h2>GET /activities/b98c8c70-4a02-45ef-868e-2c422116a4b4</h2>
                 <a class="close" href="#!">&times;</a>
                 <div class="content">
-                    <pre><div><section><h3>Full Path</h3><span>/activities/37ccbf49-4441-4dfe-beb4-d02d0b4f29fb</span></section><p></p><p></p><p></p></div></pre>
+                    <pre><div><section><h3>Full Path</h3><span>/activities/b98c8c70-4a02-45ef-868e-2c422116a4b4</span></section><p></p><p></p><p></p></div></pre>
                 </div>
             </div>
-        </div><div onclick="location.href='#!';" id="ad909474c69f4fcc8f3d380c8fa975c4" class="overlay">
+        </div><div onclick="location.href='#!';" id="c50fe63955f1468099e3110f786bc002" class="overlay">
             <div class="popup" onclick="event.stopPropagation();">
-                <h2>200 OK (3ms)</h2>
+                <h2>200 OK (2ms)</h2>
                 <a class="close" href="#!">&times;</a>
                 <div class="content">
-                    <pre><div><section><h3>Full Path</h3><span>/activities/37ccbf49-4441-4dfe-beb4-d02d0b4f29fb</span></section><p></p><section><h3>Response Headers</h3><p>date: Fri, 25 Sep 2026 07:06:37 GMT
-keep-alive: timeout=60
-transfer-encoding: chunked
-connection: keep-alive
-content-type: application/json</p></section><section><h3>Body</h3><p>{
-  &quot;id&quot;: &quot;37ccbf49-4441-4dfe-beb4-d02d0b4f29fb&quot;,
+                    <pre><div><section><h3>Full Path</h3><span>/activities/b98c8c70-4a02-45ef-868e-2c422116a4b4</span></section><p></p><section><h3>Response Headers</h3><p>connection: keep-alive
+content-length: 137
+content-type: application/json
+date: Fri, 25 Sep 2026 17:36:12 GMT
+keep-alive: timeout=60</p></section><section><h3>Body</h3><p>{
+  &quot;id&quot;: &quot;b98c8c70-4a02-45ef-868e-2c422116a4b4&quot;,
   &quot;lessonId&quot;: &quot;ABC&quot;,
   &quot;inputQuestions&quot;: [ ],
   &quot;maxScore&quot;: 0,
-  &quot;createdAt&quot;: &quot;2026-09-25T07:06:37.152505Z&quot;
-}</p><section><h3>Duration</h3><p>3ms</p></section></section></div></pre>
+  &quot;createdAt&quot;: &quot;2026-09-25T17:36:12.175552Z&quot;
+}</p><section><h3>Duration</h3><p>2ms</p></section></section></div></pre>
                 </div>
             </div>
         </div>
-    </article><article id="ce76a6ec67564d4498785832ea48bd8d">
-        <span class="articleStart"></span>
-        <h2 class="success">find an activity by lessonId</h2><section class="description success">
-            <h3 class="success">Description</h3>
-            Given  an existing activity with lessonId XYZ</br>When  the activity is requested by lessonId XYZ</br>Then  the activity with lessonId XYZ is returned
-        </section>
-        <aside class="facts">
-            <div class="table">
-                <h3>Key Facts</h3>
-                <div class="row">
-                    <div class="rowHead">Description</div>
-                    <div class="rowHead">Value</div>
-                </div><div class="row">
-                    <div class="cell">lessonId</div>
-                    <div class="cell">XYZ</div>
+        </article>
+    </details><details class="success">
+        <summary class="success">
+            <h2 class="success">find an activity by lessonId</h2>
+        </summary>
+        <article id="c10e5342932e4655822076303e9ff4fa" class="success">
+        <div class="cards-row"><section class="card description success">
+                <h3 class="success">Description</h3>
+                Given  an existing activity with lessonId XYZ</br>When  the activity is requested by lessonId XYZ</br>Then  the activity with lessonId XYZ is returned
+            </section>
+            
+            <section class="card facts success">
+                <h3 class="success">Key Facts</h3>
+                <div class="table">
+                    <div class="row">
+                        <div class="rowHead">Description</div>
+                        <div class="rowHead">Value</div>
+                    </div><div class="row">
+                        <div class="cell">lessonId</div>
+                        <div class="cell">XYZ</div>
+                    </div>
                 </div>
-            </div>
-        </aside>
-        
-        <section class="sequence diagram svg success">
+            </section>
+        </div>
+        <section class="diagram-row sequence diagram svg success">
             <h3 class="success">Sequence Diagram</h3>
-            <figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="210px" preserveAspectRatio="none" style="width:395px;height:210px;background:#FFFFFF;" version="1.1" viewBox="0 0 395 210" width="395px" zoomAndPan="magnify"><defs/><g><text fill="#656D76" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="340" x="26" y="39.5352">When the activity is requested by lessonId XYZ</text><line style="stroke:#708090;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="84.25" x2="84.25" y1="90.9766" y2="169.5977"/><line style="stroke:#708090;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="291.75" x2="291.75" y1="90.9766" y2="169.5977"/><rect fill="#FFFFFF" height="30.4883" rx="2.5" ry="2.5" style="stroke:#7D8590;stroke-width:1.5;" width="42" x="63.25" y="59.4883"/><text fill="#8392A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="70.25" y="80.0234">App</text><rect fill="#FFFFFF" height="30.4883" rx="2.5" ry="2.5" style="stroke:#7D8590;stroke-width:1.5;" width="42" x="63.25" y="168.5977"/><text fill="#8392A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="70.25" y="189.1328">App</text><rect fill="#FFFFFF" height="30.4883" rx="2.5" ry="2.5" style="stroke:#7D8590;stroke-width:1.5;" width="75" x="254.75" y="59.4883"/><text fill="#8392A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="261.75" y="80.0234">Activities</text><rect fill="#FFFFFF" height="30.4883" rx="2.5" ry="2.5" style="stroke:#7D8590;stroke-width:1.5;" width="75" x="254.75" y="168.5977"/><text fill="#8392A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="261.75" y="189.1328">Activities</text><polygon fill="#7D8590" points="280.25,118.2871,290.25,122.2871,280.25,126.2871,284.25,122.2871" style="stroke:#7D8590;stroke-width:1.0;"/><line style="stroke:#7D8590;stroke-width:1.5;" x1="84.25" x2="286.25" y1="122.2871" y2="122.2871"/><a href="#cfebf77818b945cb8a13ae576100a7cb" target="_self" title="GET /activities?lessonId=XYZ" xlink:actuate="onRequest" xlink:href="#cfebf77818b945cb8a13ae576100a7cb" xlink:show="new" xlink:title="GET /activities?lessonId=XYZ" xlink:type="simple"><text fill="#656D76" font-family="sans-serif" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="184" x="91.25" y="117.5449">GET /activities?lessonId=XYZ</text></a><polygon fill="#7D8590" points="95.25,147.5977,85.25,151.5977,95.25,155.5977,91.25,151.5977" style="stroke:#7D8590;stroke-width:1.0;"/><line style="stroke:#7D8590;stroke-width:1.5;stroke-dasharray:2.0,2.0;" x1="89.25" x2="291.25" y1="151.5977" y2="151.5977"/><a href="#8a89c8a1e7e84d7fbff90233a2bb84d9" target="_self" title="200 OK (6ms)" xlink:actuate="onRequest" xlink:href="#8a89c8a1e7e84d7fbff90233a2bb84d9" xlink:show="new" xlink:title="200 OK (6ms)" xlink:type="simple"><text fill="#656D76" font-family="sans-serif" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="85" x="101.25" y="146.8555">200 OK (6ms)</text></a></g></svg></figure>
-            <div onclick="location.href='#!';" id="aada6a0edbf246639b1b91f88a684148" class="overlay">
+            <figure><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="SEQUENCE" style="width:392px;height:180px;background:#FFFFFF;" width="392px" height="180px" viewBox="0 0 392 180" zoomAndPan="magnify" preserveAspectRatio="none" contentStyleType="text/css"><?plantuml 1.2026.8?><defs/><g font-family="sans-serif" lengthAdjust="spacing"><g><title>Lsd_kotlin_cucumber_example</title><rect x="122.594" y="51.488" width="8" height="76.621" fill="#000" fill-opacity="0"/><line x1="126.094" y1="51.488" x2="126.094" y2="128.109" style="stroke:#000;stroke-width:1;stroke-dasharray:5,5;"/></g><g><title>Activities</title><rect x="334.769" y="51.488" width="8" height="76.621" fill="#000" fill-opacity="0"/><line x1="338.269" y1="51.488" x2="338.269" y2="128.109" style="stroke:#000;stroke-width:1;stroke-dasharray:5,5;"/></g><g><title></title><rect x="333.269" y="80.799" width="10" height="29.311" fill="#87CEEB" style="stroke:#000;stroke-width:1;"/></g><rect x="15" y="15" width="222.188" height="30.488" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><text x="22" y="35.535" fill="#000" font-size="14" textLength="208.188" font-family="Hack">Lsd_kotlin_cucumber_example</text><rect x="300.456" y="15" width="75.626" height="30.488" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><text x="307.456" y="35.535" fill="#000" font-size="14" textLength="61.626" font-family="Hack">Activities</text><rect x="15" y="133.109" width="222.188" height="30.488" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><text x="22" y="153.645" fill="#000" font-size="14" textLength="208.188" font-family="Hack">Lsd_kotlin_cucumber_example</text><rect x="300.456" y="133.109" width="75.626" height="30.488" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><text x="307.456" y="153.645" fill="#000" font-size="14" textLength="61.626" font-family="Hack">Activities</text><polygon points="321.269,76.799,331.269,80.799,321.269,84.799,325.269,80.799" fill="#000" style="stroke:#000;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/><line x1="126.094" y1="80.799" x2="327.269" y2="80.799" style="stroke:#000;stroke-width:1;"/><a target="_self" href="#c592ba7a0284480ea5f6da52b5b18c0c" xlink:href="#c592ba7a0284480ea5f6da52b5b18c0c" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" title="GET /activities?lessonId=XYZ" xlink:title="GET /activities?lessonId=XYZ"><text x="133.094" y="76.057" fill="#333" font-size="13" textLength="183.174" text-decoration="underline" font-family="Hack">GET /activities?lessonId=XYZ</text></a><polygon points="137.094,106.109,127.094,110.109,137.094,114.109,133.094,110.109" fill="#000" style="stroke:#000;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/><line x1="131.094" y1="110.109" x2="332.269" y2="110.109" style="stroke:#000;stroke-width:1;stroke-dasharray:2,2;"/><a target="_self" href="#98fe36e3bf01467ea706d730d6bbfa90" xlink:href="#98fe36e3bf01467ea706d730d6bbfa90" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" title="200 OK (8ms)" xlink:title="200 OK (8ms)"><text x="143.094" y="105.367" fill="#333" font-size="13" textLength="86.912" text-decoration="underline" font-family="Hack">200 OK (8ms)</text></a></g></svg></figure>
+            <div onclick="location.href='#!';" id="e5e1d7ff432f4b82b595e932d06dfe2d" class="overlay">
                 <div class="popup" onclick="event.stopPropagation();">
                     <h2>PlantUml markup</h2>
-                    <span class="copy" title="copy" onclick="copyToClipboard('sequence_uml_codeaada6a0edbf246639b1b91f88a684148')"></span>
+                    <span class="copy" title="copy" onclick="copyToClipboard('sequence_uml_codee5e1d7ff432f4b82b595e932d06dfe2d')"></span>
                     <a class="close" href="#!">&times;</a>
                     <div class="content">
-                        <pre><code id="sequence_uml_codeaada6a0edbf246639b1b91f88a684148">
-@startuml
+                        <pre><code id="sequence_uml_codee5e1d7ff432f4b82b595e932d06dfe2d">@startuml
 
-!theme lsd-light from https://cdn.jsdelivr.net/gh/lsd-consulting/lsd-core@6/src/main/resources/static/
+!theme mono
 skinparam svgLinkTarget _self
 
 hide unlinked
 
-!include &lt;tupadr3/font-awesome-5/clock&gt;
 !include &lt;tupadr3/font-awesome-5/database&gt;
+!include &lt;tupadr3/font-awesome-5/clock&gt;
 
 
-participant App
+participant Lsd_kotlin_cucumber_example
 participant Activities
 
 
+Lsd_kotlin_cucumber_example -&gt; Activities: [[#c592ba7a0284480ea5f6da52b5b18c0c {GET /activities?lessonId&#x3D;XYZ} GET /activities?lessonId&#x3D;XYZ]]
+activate Activities#skyblue
+Activities --&gt; Lsd_kotlin_cucumber_example: [[#98fe36e3bf01467ea706d730d6bbfa90 {200 OK (8ms)} 200 OK (8ms)]]
+deactivate Activities
 
-title When the activity is requested by lessonId XYZ
 
-App -&gt; Activities: [[#cfebf77818b945cb8a13ae576100a7cb {GET /activities?lessonId&#x3D;XYZ} GET /activities?lessonId&#x3D;XYZ]]
-Activities --&gt; App: [[#8a89c8a1e7e84d7fbff90233a2bb84d9 {200 OK (6ms)} 200 OK (6ms)]]
-
-
-@enduml
-</code></pre>
+@enduml</code></pre>
                     </div>
                 </div>
             </div>
-            <sub><a href="#aada6a0edbf246639b1b91f88a684148">[source]</a></sub>
-            <sub><a href="#8f212c5a4d1f4f5d89dae911c1a9c63c">[component diagram]</a></sub>
+            <sub><a href="#e5e1d7ff432f4b82b595e932d06dfe2d">[source]</a></sub>
+            <sub><a href="#ce34d613ff36451f8cccecc0d8734991">[component diagram]</a></sub>
         </section>
         <!-- Popup for component diagram -->
-        <div onclick="location.href='#!';" id="8f212c5a4d1f4f5d89dae911c1a9c63c" class="overlay">
+        <div onclick="location.href='#!';" id="ce34d613ff36451f8cccecc0d8734991" class="overlay">
             <div class="popup" onclick="event.stopPropagation();">
                 <h2>Component Diagram</h2>
                 <a class="close" href="#!">&times;</a>
                 <div class="content">
-                    <pre><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="153px" preserveAspectRatio="none" style="width:121px;height:153px;" version="1.1" viewBox="0 0 121 153" width="121px" zoomAndPan="magnify"><defs/><g><!--entity App--><g id="elem_App"><rect fill="#FFFFFF" height="47.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="68" x="29" y="17"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="77" y="22"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="75" y="24"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="75" y="28"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="28" x="44" y="51.0752">App</text></g><!--entity Activities--><g id="elem_Activities"><rect fill="#FFFFFF" height="47.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="104" x="11" y="100"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="95" y="105"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="93" y="107"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="93" y="111"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="64" x="26" y="134.0752">Activities</text></g><path d="M63,64.063 C63,75.204 63,88.6144 63,99.7771 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="63,99.7771,67,90.7771,63,94.7771,59,90.7771,63,99.7771" style="stroke:#000000;stroke-width:1.0;"/></g></svg></pre>
+                    <pre><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="DESCRIPTION" style="width:285px;height:163px;" width="285px" height="163px" viewBox="0 0 285 163" zoomAndPan="magnify" preserveAspectRatio="none" contentStyleType="text/css"><?plantuml 1.2026.8?><defs/><g font-family="sans-serif" lengthAdjust="spacing"><!--entity Lsd_kotlin_cucumber_example--><g class="entity" data-qualified-name="Lsd_kotlin_cucumber_example" id="ent0001" data-source-line="5"><rect x="11" y="17" width="257.868" height="47.015" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><rect x="248.868" y="22" width="15" height="10" fill="#FFF" style="stroke:#000;stroke-width:1;"/><rect x="246.868" y="24" width="4" height="2" fill="#FFF" style="stroke:#000;stroke-width:1;"/><rect x="246.868" y="28" width="4" height="2" fill="#FFF" style="stroke:#000;stroke-width:1;"/><text x="26" y="51.075" fill="#000" font-size="14" textLength="217.868" font-family="Verdana">Lsd_kotlin_cucumber_example</text></g><!--entity Activities--><g class="entity" data-qualified-name="Activities" id="ent0002" data-source-line="6"><rect x="88.5" y="100" width="103.342" height="47.015" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><rect x="171.842" y="105" width="15" height="10" fill="#FFF" style="stroke:#000;stroke-width:1;"/><rect x="169.842" y="107" width="4" height="2" fill="#FFF" style="stroke:#000;stroke-width:1;"/><rect x="169.842" y="111" width="4" height="2" fill="#FFF" style="stroke:#000;stroke-width:1;"/><text x="103.5" y="134.075" fill="#000" font-size="14" textLength="63.342" font-family="Verdana">Activities</text></g><g class="link" data-entity-1="ent0001" data-entity-2="ent0002" id="lnk3" data-link-type="dependency"><polygon points="140,99.777,144,90.777,140,94.777,136,90.777,140,99.777" fill="#000" style="stroke:#000;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/><path d="M140,64.063 C140,75.204 140,83.614 140,94.777" style="stroke:#000;stroke-width:1;" fill="none"/></g></g></svg></pre>
                 </div>
-                <sub><a href="#uml8f212c5a4d1f4f5d89dae911c1a9c63c">[source]</a></sub>
+                <sub><a href="#umlce34d613ff36451f8cccecc0d8734991">[source]</a></sub>
             </div>
         </div>
         <!-- Popup for component diagram UML via component diagram popup -->
-        <div onclick="location.href='#!';" id="uml8f212c5a4d1f4f5d89dae911c1a9c63c" class="overlay">
+        <div onclick="location.href='#!';" id="umlce34d613ff36451f8cccecc0d8734991" class="overlay">
             <div class="popup" onclick="event.stopPropagation();">
                 <h2>PlantUml markup</h2>
-                <span class="copy" title="copy" onclick="copyToClipboard('component_uml_code8f212c5a4d1f4f5d89dae911c1a9c63c')"></span>
-                <a class="close" href="#8f212c5a4d1f4f5d89dae911c1a9c63c">&times;</a><!--show previous popup on close-->
+                <span class="copy" title="copy" onclick="copyToClipboard('component_uml_codece34d613ff36451f8cccecc0d8734991')"></span>
+                <a class="close" href="#ce34d613ff36451f8cccecc0d8734991">&times;</a><!--show previous popup on close-->
                 <div class="content">
-                    <pre><code id="component_uml_code8f212c5a4d1f4f5d89dae911c1a9c63c">@startuml
+                    <pre><code id="component_uml_codece34d613ff36451f8cccecc0d8734991">@startuml
 !pragma layout smetana
 !theme plain
 skinparam backgroundColor transparent
 
-component App
+component Lsd_kotlin_cucumber_example
 component Activities
 
 
-[App] --&gt; Activities
+[Lsd_kotlin_cucumber_example] --&gt; Activities
 
 
 remove @unlinked
@@ -233,7 +240,7 @@ remove @unlinked
                 </div>
             </div>
         </div>
-        <!-- Section containing data for sequence diagram popups --><div onclick="location.href='#!';" id="cfebf77818b945cb8a13ae576100a7cb" class="overlay">
+        <!-- Section containing data for sequence diagram popups --><div onclick="location.href='#!';" id="c592ba7a0284480ea5f6da52b5b18c0c" class="overlay">
             <div class="popup" onclick="event.stopPropagation();">
                 <h2>GET /activities?lessonId&#x3D;XYZ</h2>
                 <a class="close" href="#!">&times;</a>
@@ -241,125 +248,109 @@ remove @unlinked
                     <pre><div><section><h3>Full Path</h3><span>/activities?lessonId=XYZ</span></section><p></p><p></p><p></p></div></pre>
                 </div>
             </div>
-        </div><div onclick="location.href='#!';" id="8a89c8a1e7e84d7fbff90233a2bb84d9" class="overlay">
+        </div><div onclick="location.href='#!';" id="98fe36e3bf01467ea706d730d6bbfa90" class="overlay">
             <div class="popup" onclick="event.stopPropagation();">
-                <h2>200 OK (6ms)</h2>
+                <h2>200 OK (8ms)</h2>
                 <a class="close" href="#!">&times;</a>
                 <div class="content">
-                    <pre><div><section><h3>Full Path</h3><span>/activities?lessonId=XYZ</span></section><p></p><section><h3>Response Headers</h3><p>date: Fri, 25 Sep 2026 07:06:37 GMT
-keep-alive: timeout=60
-transfer-encoding: chunked
-connection: keep-alive
-content-type: application/json</p></section><section><h3>Body</h3><p>[ {
-  &quot;id&quot;: &quot;b4842c8c-02b4-4d3b-9dc8-dcca85567a8e&quot;,
+                    <pre><div><section><h3>Full Path</h3><span>/activities?lessonId=XYZ</span></section><p></p><section><h3>Response Headers</h3><p>connection: keep-alive
+content-length: 138
+content-type: application/json
+date: Fri, 25 Sep 2026 17:36:12 GMT
+keep-alive: timeout=60</p></section><section><h3>Body</h3><p>[ {
+  &quot;id&quot;: &quot;2a116c74-5a35-47a1-8893-7adf56a54783&quot;,
   &quot;lessonId&quot;: &quot;XYZ&quot;,
   &quot;inputQuestions&quot;: [ ],
   &quot;maxScore&quot;: 0,
-  &quot;createdAt&quot;: &quot;2026-09-25T07:06:37.192019Z&quot;
-} ]</p><section><h3>Duration</h3><p>6ms</p></section></section></div></pre>
+  &quot;createdAt&quot;: &quot;2026-09-25T17:36:12.19461Z&quot;
+} ]</p><section><h3>Duration</h3><p>8ms</p></section></section></div></pre>
                 </div>
             </div>
         </div>
-    </article><article id="52874e0deb404f39b8df88001ee96169">
-        <span class="articleStart"></span>
-        <h2 class="success">return empty list when there is no activity with the requested lessonId</h2><section class="description success">
-            <h3 class="success">Description</h3>
-            Given  a non existent lessonId</br>When  the activity is requested by lessonId ZYX</br>Then  empty list is returned
-        </section>
-        
-        
-        <section class="sequence diagram svg success">
+        </article>
+    </details><details class="success">
+        <summary class="success">
+            <h2 class="success">return empty list when there is no activity with the requested lessonId</h2>
+        </summary>
+        <article id="e87b07ba3f1347358ca346938856aaa9" class="success">
+        <div class="cards-row"><section class="card description success">
+                <h3 class="success">Description</h3>
+                Given  a non existent lessonId</br>When  the activity is requested by lessonId ZYX</br>Then  empty list is returned
+            </section>
+            
+            
+        </div>
+        <section class="diagram-row sequence diagram svg success">
             <h3 class="success">Sequence Diagram</h3>
-            <figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="180px" preserveAspectRatio="none" style="width:269px;height:180px;background:#FFFFFF;" version="1.1" viewBox="0 0 269 180" width="269px" zoomAndPan="magnify"><defs/><g><text fill="#656D76" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="214" x="26" y="39.5352">Given a non existent lessonId</text><line style="stroke:#708090;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="94.5" x2="94.5" y1="90.9766" y2="140.2871"/><line style="stroke:#708090;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="173.5" x2="173.5" y1="90.9766" y2="140.2871"/><rect fill="#FFFFFF" height="30.4883" rx="2.5" ry="2.5" style="stroke:#7D8590;stroke-width:1.5;" width="24" x="82.5" y="59.4883"/><text fill="#8392A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="10" x="89.5" y="80.0234">A</text><rect fill="#FFFFFF" height="30.4883" rx="2.5" ry="2.5" style="stroke:#7D8590;stroke-width:1.5;" width="24" x="82.5" y="139.2871"/><text fill="#8392A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="10" x="89.5" y="159.8223">A</text><rect fill="#FFFFFF" height="30.4883" rx="2.5" ry="2.5" style="stroke:#7D8590;stroke-width:1.5;" width="22" x="162.5" y="59.4883"/><text fill="#8392A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="169.5" y="80.0234">B</text><rect fill="#FFFFFF" height="30.4883" rx="2.5" ry="2.5" style="stroke:#7D8590;stroke-width:1.5;" width="22" x="162.5" y="139.2871"/><text fill="#8392A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="8" x="169.5" y="159.8223">B</text><polygon fill="#7D8590" points="161.5,118.2871,171.5,122.2871,161.5,126.2871,165.5,122.2871" style="stroke:#7D8590;stroke-width:1.0;"/><line style="stroke:#7D8590;stroke-width:1.5;" x1="94.5" x2="167.5" y1="122.2871" y2="122.2871"/><a href="#e072363adc9a48039fab22aa20413dda" target="_self" title="message" xlink:actuate="onRequest" xlink:href="#e072363adc9a48039fab22aa20413dda" xlink:show="new" xlink:title="message" xlink:type="simple"><text fill="#656D76" font-family="sans-serif" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="55" x="101.5" y="117.5449">message</text></a></g></svg><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="210px" preserveAspectRatio="none" style="width:395px;height:210px;background:#FFFFFF;" version="1.1" viewBox="0 0 395 210" width="395px" zoomAndPan="magnify"><defs/><g><text fill="#656D76" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="340" x="26" y="39.5352">When the activity is requested by lessonId ZYX</text><line style="stroke:#708090;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="84.25" x2="84.25" y1="90.9766" y2="169.5977"/><line style="stroke:#708090;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="291.75" x2="291.75" y1="90.9766" y2="169.5977"/><rect fill="#FFFFFF" height="30.4883" rx="2.5" ry="2.5" style="stroke:#7D8590;stroke-width:1.5;" width="42" x="63.25" y="59.4883"/><text fill="#8392A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="70.25" y="80.0234">App</text><rect fill="#FFFFFF" height="30.4883" rx="2.5" ry="2.5" style="stroke:#7D8590;stroke-width:1.5;" width="42" x="63.25" y="168.5977"/><text fill="#8392A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="70.25" y="189.1328">App</text><rect fill="#FFFFFF" height="30.4883" rx="2.5" ry="2.5" style="stroke:#7D8590;stroke-width:1.5;" width="75" x="254.75" y="59.4883"/><text fill="#8392A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="261.75" y="80.0234">Activities</text><rect fill="#FFFFFF" height="30.4883" rx="2.5" ry="2.5" style="stroke:#7D8590;stroke-width:1.5;" width="75" x="254.75" y="168.5977"/><text fill="#8392A2" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="261.75" y="189.1328">Activities</text><polygon fill="#7D8590" points="280.25,118.2871,290.25,122.2871,280.25,126.2871,284.25,122.2871" style="stroke:#7D8590;stroke-width:1.0;"/><line style="stroke:#7D8590;stroke-width:1.5;" x1="84.25" x2="286.25" y1="122.2871" y2="122.2871"/><a href="#49626fa697014c39a1c2686903166ce0" target="_self" title="GET /activities?lessonId=ZYX" xlink:actuate="onRequest" xlink:href="#49626fa697014c39a1c2686903166ce0" xlink:show="new" xlink:title="GET /activities?lessonId=ZYX" xlink:type="simple"><text fill="#656D76" font-family="sans-serif" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="184" x="91.25" y="117.5449">GET /activities?lessonId=ZYX</text></a><polygon fill="#7D8590" points="95.25,147.5977,85.25,151.5977,95.25,155.5977,91.25,151.5977" style="stroke:#7D8590;stroke-width:1.0;"/><line style="stroke:#7D8590;stroke-width:1.5;stroke-dasharray:2.0,2.0;" x1="89.25" x2="291.25" y1="151.5977" y2="151.5977"/><a href="#6b1e75cd908f467397408f43335c19ad" target="_self" title="200 OK (7ms)" xlink:actuate="onRequest" xlink:href="#6b1e75cd908f467397408f43335c19ad" xlink:show="new" xlink:title="200 OK (7ms)" xlink:type="simple"><text fill="#656D76" font-family="sans-serif" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="85" x="101.25" y="146.8555">200 OK (7ms)</text></a></g></svg></figure>
-            <div onclick="location.href='#!';" id="4f7ae58aa196428e883042aae540e518" class="overlay">
+            <figure><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="SEQUENCE" style="width:514px;height:209px;background:#FFFFFF;" width="514px" height="209px" viewBox="0 0 514 209" zoomAndPan="magnify" preserveAspectRatio="none" contentStyleType="text/css"><?plantuml 1.2026.8?><defs/><g font-family="sans-serif" lengthAdjust="spacing"><g><title>A</title><rect x="23.33" y="51.488" width="8" height="105.932" fill="#000" fill-opacity="0"/><line x1="26.83" y1="51.488" x2="26.83" y2="157.42" style="stroke:#000;stroke-width:1;stroke-dasharray:5,5;"/></g><g><title>B</title><rect x="102.491" y="51.488" width="8" height="105.932" fill="#000" fill-opacity="0"/><line x1="105.991" y1="51.488" x2="105.991" y2="157.42" style="stroke:#000;stroke-width:1;stroke-dasharray:5,5;"/></g><g><title>Lsd_kotlin_cucumber_example</title><rect x="244.611" y="51.488" width="8" height="105.932" fill="#000" fill-opacity="0"/><line x1="248.111" y1="51.488" x2="248.111" y2="157.42" style="stroke:#000;stroke-width:1;stroke-dasharray:5,5;"/></g><g><title>Activities</title><rect x="456.786" y="51.488" width="8" height="105.932" fill="#000" fill-opacity="0"/><line x1="460.286" y1="51.488" x2="460.286" y2="157.42" style="stroke:#000;stroke-width:1;stroke-dasharray:5,5;"/></g><g><title></title><rect x="455.286" y="110.109" width="10" height="29.311" fill="#87CEEB" style="stroke:#000;stroke-width:1;"/></g><rect x="15" y="15" width="23.659" height="30.488" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><text x="22" y="35.535" fill="#000" font-size="14" font-family="Hack">A</text><rect x="94.964" y="15" width="22.053" height="30.488" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><text x="101.964" y="35.535" fill="#000" font-size="14" font-family="Hack">B</text><rect x="137.017" y="15" width="222.188" height="30.488" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><text x="144.017" y="35.535" fill="#000" font-size="14" textLength="208.188" font-family="Hack">Lsd_kotlin_cucumber_example</text><rect x="422.473" y="15" width="75.626" height="30.488" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><text x="429.473" y="35.535" fill="#000" font-size="14" textLength="61.626" font-family="Hack">Activities</text><rect x="15" y="162.42" width="23.659" height="30.488" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><text x="22" y="182.955" fill="#000" font-size="14" font-family="Hack">A</text><rect x="94.964" y="162.42" width="22.053" height="30.488" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><text x="101.964" y="182.955" fill="#000" font-size="14" font-family="Hack">B</text><rect x="137.017" y="162.42" width="222.188" height="30.488" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><text x="144.017" y="182.955" fill="#000" font-size="14" textLength="208.188" font-family="Hack">Lsd_kotlin_cucumber_example</text><rect x="422.473" y="162.42" width="75.626" height="30.488" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><text x="429.473" y="182.955" fill="#000" font-size="14" textLength="61.626" font-family="Hack">Activities</text><polygon points="93.991,76.799,103.991,80.799,93.991,84.799,97.991,80.799" fill="#000" style="stroke:#000;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/><line x1="26.83" y1="80.799" x2="99.991" y2="80.799" style="stroke:#000;stroke-width:1;"/><a target="_self" href="#a1809633ae7a4cd08891ac4cb61aa4b6" xlink:href="#a1809633ae7a4cd08891ac4cb61aa4b6" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" title="message" xlink:title="message"><text x="33.83" y="76.057" fill="#333" font-size="13" textLength="55.161" text-decoration="underline" font-family="Hack">message</text></a><polygon points="443.286,106.109,453.286,110.109,443.286,114.109,447.286,110.109" fill="#000" style="stroke:#000;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/><line x1="248.111" y1="110.109" x2="449.286" y2="110.109" style="stroke:#000;stroke-width:1;"/><a target="_self" href="#6b3fbb9d831c42949b99c13418ba42d6" xlink:href="#6b3fbb9d831c42949b99c13418ba42d6" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" title="GET /activities?lessonId=ZYX" xlink:title="GET /activities?lessonId=ZYX"><text x="255.111" y="105.367" fill="#333" font-size="13" textLength="183.174" text-decoration="underline" font-family="Hack">GET /activities?lessonId=ZYX</text></a><polygon points="259.111,135.42,249.111,139.42,259.111,143.42,255.111,139.42" fill="#000" style="stroke:#000;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/><line x1="253.111" y1="139.42" x2="454.286" y2="139.42" style="stroke:#000;stroke-width:1;stroke-dasharray:2,2;"/><a target="_self" href="#3c23ac422938454d897b7cf678889290" xlink:href="#3c23ac422938454d897b7cf678889290" xlink:type="simple" xlink:actuate="onRequest" xlink:show="new" title="200 OK (2ms)" xlink:title="200 OK (2ms)"><text x="265.111" y="134.678" fill="#333" font-size="13" textLength="86.912" text-decoration="underline" font-family="Hack">200 OK (2ms)</text></a></g></svg></figure>
+            <div onclick="location.href='#!';" id="904d6371170c4246aed1a9c453512c1d" class="overlay">
                 <div class="popup" onclick="event.stopPropagation();">
                     <h2>PlantUml markup</h2>
-                    <span class="copy" title="copy" onclick="copyToClipboard('sequence_uml_code4f7ae58aa196428e883042aae540e518')"></span>
+                    <span class="copy" title="copy" onclick="copyToClipboard('sequence_uml_code904d6371170c4246aed1a9c453512c1d')"></span>
                     <a class="close" href="#!">&times;</a>
                     <div class="content">
-                        <pre><code id="sequence_uml_code4f7ae58aa196428e883042aae540e518">@startuml
+                        <pre><code id="sequence_uml_code904d6371170c4246aed1a9c453512c1d">@startuml
 
-!theme lsd-light from https://cdn.jsdelivr.net/gh/lsd-consulting/lsd-core@6/src/main/resources/static/
+!theme mono
 skinparam svgLinkTarget _self
 
 hide unlinked
 
-!include &lt;tupadr3/font-awesome-5/clock&gt;
 !include &lt;tupadr3/font-awesome-5/database&gt;
+!include &lt;tupadr3/font-awesome-5/clock&gt;
 
 
 participant A
 participant B
-
-
-
-title Given a non existent lessonId
-
-A -&gt; B: [[#e072363adc9a48039fab22aa20413dda {message} message]]
-
-
-@enduml
-@startuml
-
-!theme lsd-light from https://cdn.jsdelivr.net/gh/lsd-consulting/lsd-core@6/src/main/resources/static/
-skinparam svgLinkTarget _self
-
-hide unlinked
-
-!include &lt;tupadr3/font-awesome-5/clock&gt;
-!include &lt;tupadr3/font-awesome-5/database&gt;
-
-
-participant App
+participant Lsd_kotlin_cucumber_example
 participant Activities
 
 
+A -&gt; B: [[#a1809633ae7a4cd08891ac4cb61aa4b6 {message} message]]
+Lsd_kotlin_cucumber_example -&gt; Activities: [[#6b3fbb9d831c42949b99c13418ba42d6 {GET /activities?lessonId&#x3D;ZYX} GET /activities?lessonId&#x3D;ZYX]]
+activate Activities#skyblue
+Activities --&gt; Lsd_kotlin_cucumber_example: [[#3c23ac422938454d897b7cf678889290 {200 OK (2ms)} 200 OK (2ms)]]
+deactivate Activities
 
-title When the activity is requested by lessonId ZYX
 
-App -&gt; Activities: [[#49626fa697014c39a1c2686903166ce0 {GET /activities?lessonId&#x3D;ZYX} GET /activities?lessonId&#x3D;ZYX]]
-Activities --&gt; App: [[#6b1e75cd908f467397408f43335c19ad {200 OK (7ms)} 200 OK (7ms)]]
-
-
-@enduml
-</code></pre>
+@enduml</code></pre>
                     </div>
                 </div>
             </div>
-            <sub><a href="#4f7ae58aa196428e883042aae540e518">[source]</a></sub>
-            <sub><a href="#a00d2876acd84fe9a731eefbb718d596">[component diagram]</a></sub>
+            <sub><a href="#904d6371170c4246aed1a9c453512c1d">[source]</a></sub>
+            <sub><a href="#c446e1a087614c19a6b2ae9f8f8af749">[component diagram]</a></sub>
         </section>
         <!-- Popup for component diagram -->
-        <div onclick="location.href='#!';" id="a00d2876acd84fe9a731eefbb718d596" class="overlay">
+        <div onclick="location.href='#!';" id="c446e1a087614c19a6b2ae9f8f8af749" class="overlay">
             <div class="popup" onclick="event.stopPropagation();">
                 <h2>Component Diagram</h2>
                 <a class="close" href="#!">&times;</a>
                 <div class="content">
-                    <pre><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="153px" preserveAspectRatio="none" style="width:189px;height:153px;" version="1.1" viewBox="0 0 189 153" width="189px" zoomAndPan="magnify"><defs/><g><!--entity A--><g id="elem_A"><rect fill="#FFFFFF" height="47.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="50" x="11" y="17"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="41" y="22"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="39" y="24"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="39" y="28"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="10" x="26" y="51.0752">A</text></g><!--entity B--><g id="elem_B"><rect fill="#FFFFFF" height="47.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="50" x="11" y="100"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="41" y="105"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="39" y="107"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="39" y="111"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="10" x="26" y="134.0752">B</text></g><!--entity App--><g id="elem_App"><rect fill="#FFFFFF" height="47.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="68" x="97" y="17"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="145" y="22"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="143" y="24"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="143" y="28"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="28" x="112" y="51.0752">App</text></g><!--entity Activities--><g id="elem_Activities"><rect fill="#FFFFFF" height="47.0146" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:1.0;" width="104" x="79" y="100"/><rect fill="#FFFFFF" height="10" style="stroke:#000000;stroke-width:1.0;" width="15" x="163" y="105"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="161" y="107"/><rect fill="#FFFFFF" height="2" style="stroke:#000000;stroke-width:1.0;" width="4" x="161" y="111"/><text fill="#000000" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="64" x="94" y="134.0752">Activities</text></g><path d="M36,64.063 C36,75.204 36,88.6144 36,99.7771 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="36,99.7771,40,90.7771,36,94.7771,32,90.7771,36,99.7771" style="stroke:#000000;stroke-width:1.0;"/><path d="M131,64.063 C131,75.204 131,88.6144 131,99.7771 " fill="none" style="stroke:#000000;stroke-width:1.0;"/><polygon fill="#000000" points="131,99.7771,135,90.7771,131,94.7771,127,90.7771,131,99.7771" style="stroke:#000000;stroke-width:1.0;"/></g></svg></pre>
+                    <pre><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" data-diagram-type="DESCRIPTION" style="width:353px;height:163px;" width="353px" height="163px" viewBox="0 0 353 163" zoomAndPan="magnify" preserveAspectRatio="none" contentStyleType="text/css"><?plantuml 1.2026.8?><defs/><g font-family="sans-serif" lengthAdjust="spacing"><!--entity A--><g class="entity" data-qualified-name="A" id="ent0001" data-source-line="5"><rect x="11" y="17" width="49.57" height="47.015" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><rect x="40.57" y="22" width="15" height="10" fill="#FFF" style="stroke:#000;stroke-width:1;"/><rect x="38.57" y="24" width="4" height="2" fill="#FFF" style="stroke:#000;stroke-width:1;"/><rect x="38.57" y="28" width="4" height="2" fill="#FFF" style="stroke:#000;stroke-width:1;"/><text x="26" y="51.075" fill="#000" font-size="14" font-family="Verdana">A</text></g><!--entity B--><g class="entity" data-qualified-name="B" id="ent0002" data-source-line="6"><rect x="11" y="100" width="49.598" height="47.015" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><rect x="40.598" y="105" width="15" height="10" fill="#FFF" style="stroke:#000;stroke-width:1;"/><rect x="38.598" y="107" width="4" height="2" fill="#FFF" style="stroke:#000;stroke-width:1;"/><rect x="38.598" y="111" width="4" height="2" fill="#FFF" style="stroke:#000;stroke-width:1;"/><text x="26" y="134.075" fill="#000" font-size="14" font-family="Verdana">B</text></g><!--entity Lsd_kotlin_cucumber_example--><g class="entity" data-qualified-name="Lsd_kotlin_cucumber_example" id="ent0003" data-source-line="7"><rect x="79" y="17" width="257.868" height="47.015" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><rect x="316.868" y="22" width="15" height="10" fill="#FFF" style="stroke:#000;stroke-width:1;"/><rect x="314.868" y="24" width="4" height="2" fill="#FFF" style="stroke:#000;stroke-width:1;"/><rect x="314.868" y="28" width="4" height="2" fill="#FFF" style="stroke:#000;stroke-width:1;"/><text x="94" y="51.075" fill="#000" font-size="14" textLength="217.868" font-family="Verdana">Lsd_kotlin_cucumber_example</text></g><!--entity Activities--><g class="entity" data-qualified-name="Activities" id="ent0004" data-source-line="8"><rect x="156.5" y="100" width="103.342" height="47.015" fill="#FFF" style="stroke:#000;stroke-width:1;" rx="2.5" ry="2.5"/><rect x="239.842" y="105" width="15" height="10" fill="#FFF" style="stroke:#000;stroke-width:1;"/><rect x="237.842" y="107" width="4" height="2" fill="#FFF" style="stroke:#000;stroke-width:1;"/><rect x="237.842" y="111" width="4" height="2" fill="#FFF" style="stroke:#000;stroke-width:1;"/><text x="171.5" y="134.075" fill="#000" font-size="14" textLength="63.342" font-family="Verdana">Activities</text></g><g class="link" data-entity-1="ent0001" data-entity-2="ent0002" id="lnk5" data-link-type="dependency"><polygon points="36,99.777,40,90.777,36,94.777,32,90.777,36,99.777" fill="#000" style="stroke:#000;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/><path d="M36,64.063 C36,75.204 36,83.614 36,94.777" style="stroke:#000;stroke-width:1;" fill="none"/></g><g class="link" data-entity-1="ent0003" data-entity-2="ent0004" id="lnk6" data-link-type="dependency"><polygon points="208,99.777,212,90.777,208,94.777,204,90.777,208,99.777" fill="#000" style="stroke:#000;stroke-width:1;stroke-linejoin:miter;stroke-miterlimit:10;"/><path d="M208,64.063 C208,75.204 208,83.614 208,94.777" style="stroke:#000;stroke-width:1;" fill="none"/></g></g></svg></pre>
                 </div>
-                <sub><a href="#umla00d2876acd84fe9a731eefbb718d596">[source]</a></sub>
+                <sub><a href="#umlc446e1a087614c19a6b2ae9f8f8af749">[source]</a></sub>
             </div>
         </div>
         <!-- Popup for component diagram UML via component diagram popup -->
-        <div onclick="location.href='#!';" id="umla00d2876acd84fe9a731eefbb718d596" class="overlay">
+        <div onclick="location.href='#!';" id="umlc446e1a087614c19a6b2ae9f8f8af749" class="overlay">
             <div class="popup" onclick="event.stopPropagation();">
                 <h2>PlantUml markup</h2>
-                <span class="copy" title="copy" onclick="copyToClipboard('component_uml_codea00d2876acd84fe9a731eefbb718d596')"></span>
-                <a class="close" href="#a00d2876acd84fe9a731eefbb718d596">&times;</a><!--show previous popup on close-->
+                <span class="copy" title="copy" onclick="copyToClipboard('component_uml_codec446e1a087614c19a6b2ae9f8f8af749')"></span>
+                <a class="close" href="#c446e1a087614c19a6b2ae9f8f8af749">&times;</a><!--show previous popup on close-->
                 <div class="content">
-                    <pre><code id="component_uml_codea00d2876acd84fe9a731eefbb718d596">@startuml
+                    <pre><code id="component_uml_codec446e1a087614c19a6b2ae9f8f8af749">@startuml
 !pragma layout smetana
 !theme plain
 skinparam backgroundColor transparent
 
 component A
 component B
-component App
+component Lsd_kotlin_cucumber_example
 component Activities
 
 
 [A] --&gt; B
-[App] --&gt; Activities
+[Lsd_kotlin_cucumber_example] --&gt; Activities
 
 
 remove @unlinked
@@ -367,7 +358,7 @@ remove @unlinked
                 </div>
             </div>
         </div>
-        <!-- Section containing data for sequence diagram popups --><div onclick="location.href='#!';" id="e072363adc9a48039fab22aa20413dda" class="overlay">
+        <!-- Section containing data for sequence diagram popups --><div onclick="location.href='#!';" id="a1809633ae7a4cd08891ac4cb61aa4b6" class="overlay">
             <div class="popup" onclick="event.stopPropagation();">
                 <h2>message</h2>
                 <a class="close" href="#!">&times;</a>
@@ -375,7 +366,7 @@ remove @unlinked
                     <pre>hello</pre>
                 </div>
             </div>
-        </div><div onclick="location.href='#!';" id="49626fa697014c39a1c2686903166ce0" class="overlay">
+        </div><div onclick="location.href='#!';" id="6b3fbb9d831c42949b99c13418ba42d6" class="overlay">
             <div class="popup" onclick="event.stopPropagation();">
                 <h2>GET /activities?lessonId&#x3D;ZYX</h2>
                 <a class="close" href="#!">&times;</a>
@@ -383,28 +374,30 @@ remove @unlinked
                     <pre><div><section><h3>Full Path</h3><span>/activities?lessonId=ZYX</span></section><p></p><p></p><p></p></div></pre>
                 </div>
             </div>
-        </div><div onclick="location.href='#!';" id="6b1e75cd908f467397408f43335c19ad" class="overlay">
+        </div><div onclick="location.href='#!';" id="3c23ac422938454d897b7cf678889290" class="overlay">
             <div class="popup" onclick="event.stopPropagation();">
-                <h2>200 OK (7ms)</h2>
+                <h2>200 OK (2ms)</h2>
                 <a class="close" href="#!">&times;</a>
                 <div class="content">
-                    <pre><div><section><h3>Full Path</h3><span>/activities?lessonId=ZYX</span></section><p></p><section><h3>Response Headers</h3><p>date: Fri, 25 Sep 2026 07:06:37 GMT
-keep-alive: timeout=60
-transfer-encoding: chunked
-connection: keep-alive
-content-type: application/json</p></section><section><h3>Body</h3><p>[ ]</p><section><h3>Duration</h3><p>7ms</p></section></section></div></pre>
+                    <pre><div><section><h3>Full Path</h3><span>/activities?lessonId=ZYX</span></section><p></p><section><h3>Response Headers</h3><p>connection: keep-alive
+content-length: 2
+content-type: application/json
+date: Fri, 25 Sep 2026 17:36:12 GMT
+keep-alive: timeout=60</p></section><section><h3>Body</h3><p>[ ]</p><section><h3>Duration</h3><p>2ms</p></section></section></div></pre>
                 </div>
             </div>
         </div>
-    </article>
+        </article>
+    </details>
 </main>
 </body>
 <footer>
     <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11/build/styles/dark.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/lsd-consulting/lsd-core@6/src/main/resources/static/custom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/lsd-consulting/lsd-core@8/src/main/resources/static/custom.min.js"></script>
 
     <script>
+        playLogoVideo();
         addSliderForSvgZoom();
         highlightLifelinesWhenClicked();
     </script>
@@ -412,8 +405,19 @@ content-type: application/json</p></section><section><h3>Body</h3><p>[ ]</p><sec
     <script>hljs.highlightAll();</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js"></script>
     <script>
-        highlightKeywords();highlightFact("6eb2f0e52ab94933a9e4f6337ef86e76", "ABC");highlightFact("ce76a6ec67564d4498785832ea48bd8d", "XYZ");
+        highlightKeywords();highlightFact("387d984a0a7340a0b803e141e9702720", "ABC");highlightFact("c10e5342932e4655822076303e9ff4fa", "XYZ");
         unMarkSvg();
     </script>
+    <footer class="report-footer ribbon">
+    <div class="ribbon-bar"></div>
+    <div class="footer-stack">
+        <p class="footer-text">Generated by
+            <a href="https://github.com/lsd-consulting/lsd-core?utm_source=lsd-report&utm_medium=footer&utm_campaign=generated-by" target="_blank" rel="noopener noreferrer">
+                <img src="https://cdn.jsdelivr.net/gh/lsd-consulting/lsd-core@main/src/main/resources/static/lsd_logo.png" alt="LSD" class="footer-logo">
+            </a>
+        </p>
+    </div>
+</footer>
+
 </footer>
 </html>
