@@ -1,53 +1,45 @@
-import org.gradle.api.JavaVersion.VERSION_11
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
-    kotlin("jvm") version "1.8.10"
-    kotlin("plugin.spring") version "1.8.10"
+    kotlin("jvm") version "2.4.20" apply false
+    kotlin("plugin.spring") version "2.4.20" apply false
+    id("org.springframework.boot") version "4.1.1" apply false
+    id("io.spring.dependency-management") version "1.1.7"
     id("java")
-    id("io.spring.dependency-management") version "1.0.9.RELEASE"
 }
 
 group = "io.github.lsd-consulting"
-rootProject.version = System.getenv("CI_PIPELINE_ID")
+rootProject.version = System.getenv("CI_PIPELINE_ID") ?: "0.0.0-SNAPSHOT"
 println("Build Version = ${project.version}")
-
-configurations {
-    compileOnly {
-        extendsFrom(configurations.annotationProcessor.get())
-    }
-}
 
 allprojects {
     group = "io.github.lsd-consulting"
     version = rootProject.version
 
-    apply(plugin = "io.spring.dependency-management")
-    apply(plugin = "java")
-
     repositories {
         mavenLocal()
         mavenCentral()
     }
+}
 
-    extra["springCloudVersion"] = "2020.0.4"
+subprojects {
+    apply(plugin = "io.spring.dependency-management")
+    apply(plugin = "java")
+    apply(plugin = "org.jetbrains.kotlin.jvm")
 
-    tasks.withType<KotlinCompile> {
-        kotlinOptions {
-            freeCompilerArgs = listOf("-Xjsr305=strict")
-            jvmTarget = "11"
-        }
+    the<JavaPluginExtension>().toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
     }
 
-    java.sourceCompatibility = VERSION_11
-    java.targetCompatibility = VERSION_11
-    java.withJavadocJar()
-    java.withSourcesJar()
+    the<org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension>().jvmToolchain(21)
+
+    // Boot BOM pins older coroutines; lsd-core 9 needs 1.11+
+    extra["kotlin-coroutines.version"] = "1.11.0"
 
     dependencyManagement {
         imports {
-            mavenBom("org.springframework.cloud:spring-cloud-dependencies:${property("springCloudVersion")}")
+            mavenBom(org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES)
+            mavenBom("org.springframework.cloud:spring-cloud-dependencies:2025.1.3")
+            mavenBom("org.jetbrains.kotlin:kotlin-bom:2.4.20")
+            mavenBom("org.junit:junit-bom:6.1.3")
         }
     }
 }
-

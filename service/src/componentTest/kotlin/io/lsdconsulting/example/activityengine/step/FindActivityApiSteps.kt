@@ -3,24 +3,14 @@ package io.lsdconsulting.example.activityengine.step
 import com.lsd.core.LsdContext
 import com.lsd.core.builders.MessageBuilder.Companion.messageBuilder
 import io.cucumber.java8.En
-import io.cucumber.spring.CucumberContextConfiguration
-import io.lsdconsulting.example.activityengine.ActivityEngineApplication
 import io.lsdconsulting.example.activityengine.api.request.ActivityRequest
 import io.lsdconsulting.example.activityengine.api.response.ActivityResponse
 import io.lsdconsulting.example.activityengine.client.ActivityEngineClient
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.*
-import org.springframework.boot.test.context.SpringBootTest
-import org.springframework.boot.test.context.SpringBootTest.WebEnvironment.DEFINED_PORT
-import org.springframework.boot.test.web.client.TestRestTemplate
-import org.springframework.cloud.openfeign.EnableFeignClients
+import org.springframework.boot.resttestclient.TestRestTemplate
 import org.springframework.http.ResponseEntity
-import org.springframework.test.context.TestPropertySource
 
-@CucumberContextConfiguration
-@SpringBootTest(webEnvironment = DEFINED_PORT, classes = [ActivityEngineApplication::class])
-@EnableFeignClients(clients = [ActivityEngineClient::class])
-@TestPropertySource("classpath:application-test.properties")
 class FindActivityApiSteps(
     val activityEngineClient: ActivityEngineClient,
     private val testRestTemplate: TestRestTemplate,
