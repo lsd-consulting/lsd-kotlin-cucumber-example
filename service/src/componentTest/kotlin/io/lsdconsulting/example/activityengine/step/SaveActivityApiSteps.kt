@@ -8,7 +8,7 @@ import io.lsdconsulting.example.activityengine.api.shared.question.InputQuestion
 import io.lsdconsulting.example.activityengine.client.ActivityEngineClient
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.*
-import org.springframework.boot.test.web.client.TestRestTemplate
+import org.springframework.boot.resttestclient.TestRestTemplate
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import java.util.*
