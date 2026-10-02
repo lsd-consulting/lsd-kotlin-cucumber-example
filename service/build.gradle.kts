@@ -52,9 +52,9 @@ dependencies {
     add("componentTestImplementation", "org.junit.jupiter:junit-jupiter")
     add("componentTestRuntimeOnly", "org.junit.platform:junit-platform-launcher")
 
-    add("componentTestImplementation", "io.cucumber:cucumber-java8:7.34.9")
-    add("componentTestImplementation", "io.cucumber:cucumber-junit-platform-engine:7.34.9")
-    add("componentTestImplementation", "io.cucumber:cucumber-spring:7.34.9")
+    add("componentTestImplementation", "io.cucumber:cucumber-java8:8.0.3")
+    add("componentTestImplementation", "io.cucumber:cucumber-junit-platform-engine:8.0.3")
+    add("componentTestImplementation", "io.cucumber:cucumber-spring:8.0.3")
 }
 
 val componentTestTask = tasks.register<Test>("componentTest") {
