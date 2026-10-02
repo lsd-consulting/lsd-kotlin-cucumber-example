@@ -45,7 +45,7 @@ dependencies {
     add("componentTestImplementation", "org.springframework.boot:spring-boot-tomcat")
     add("componentTestImplementation", "org.springframework.boot:spring-boot-starter-tomcat")
 
-    add("componentTestImplementation", "io.github.lsd-consulting:lsd-cucumber:9.0.1")
+    add("componentTestImplementation", "io.github.lsd-consulting:lsd-cucumber:9.0.5")
     add("componentTestImplementation", "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0")
     add("componentTestImplementation", "io.github.lsd-consulting:lsd-interceptors:9.0.0")
 
