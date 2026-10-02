@@ -47,7 +47,7 @@ dependencies {
 
     add("componentTestImplementation", "io.github.lsd-consulting:lsd-cucumber:9.0.1")
     add("componentTestImplementation", "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0")
-    add("componentTestImplementation", "io.github.lsd-consulting:lsd-interceptors:9.0.0")
+    add("componentTestImplementation", "io.github.lsd-consulting:lsd-interceptors:9.0.4")
 
     add("componentTestImplementation", "org.junit.jupiter:junit-jupiter")
     add("componentTestRuntimeOnly", "org.junit.platform:junit-platform-launcher")
