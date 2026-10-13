@@ -38,7 +38,7 @@ subprojects {
         imports {
             mavenBom(org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES)
             mavenBom("org.springframework.cloud:spring-cloud-dependencies:2025.1.3")
-            mavenBom("org.jetbrains.kotlin:kotlin-bom:2.4.20")
+            mavenBom("org.jetbrains.kotlin:kotlin-bom:2.4.21")
             mavenBom("org.junit:junit-bom:6.1.3")
         }
     }
