@@ -7,9 +7,15 @@ updates:
     directory: "/"
     target-branch: "main"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "Europe/London"
+    cooldown:
+      default-days: 3
     commit-message:
-      prefix: "fix"  # Triggers PATCH release
+      prefix: "build"  # build(deps): releases nothing by itself (Maven Central publishing limits)
+      include: "scope"
     open-pull-requests-limit: 10
     ignore:
       # Ignore test dependencies in this update group
@@ -43,7 +49,12 @@ updates:
     directory: "/"
     target-branch: "main"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+      day: "monday"
+      time: "06:00"
+      timezone: "Europe/London"
+    cooldown:
+      default-days: 3
     commit-message:
       prefix: "test"  # Does not trigger semantic release
     open-pull-requests-limit: 5
