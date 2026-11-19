@@ -52,7 +52,7 @@ dependencies {
     add("componentTestImplementation", "org.junit.jupiter:junit-jupiter")
     add("componentTestRuntimeOnly", "org.junit.platform:junit-platform-launcher")
 
-    add("componentTestImplementation", "io.cucumber:cucumber-java8:8.0.4")
+    add("componentTestImplementation", "io.cucumber:cucumber-java8:8.1.0")
     add("componentTestImplementation", "io.cucumber:cucumber-junit-platform-engine:8.0.4")
     add("componentTestImplementation", "io.cucumber:cucumber-spring:8.0.4")
 }
