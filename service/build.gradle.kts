@@ -54,7 +54,7 @@ dependencies {
 
     add("componentTestImplementation", "io.cucumber:cucumber-java8:8.0.4")
     add("componentTestImplementation", "io.cucumber:cucumber-junit-platform-engine:8.0.4")
-    add("componentTestImplementation", "io.cucumber:cucumber-spring:8.0.4")
+    add("componentTestImplementation", "io.cucumber:cucumber-spring:8.1.0")
 }
 
 val componentTestTask = tasks.register<Test>("componentTest") {
